@@ -199,107 +199,6 @@ define('resources/report-card',['exports', '../environment', 'aurelia-framework'
     return ReportCard;
   }()) || _class;
 });
-define('components/card-notification/card-notification',['exports', 'aurelia-framework'], function (exports, _aureliaFramework) {
-  'use strict';
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.CardNotification = undefined;
-
-  function _initDefineProp(target, property, descriptor, context) {
-    if (!descriptor) return;
-    Object.defineProperty(target, property, {
-      enumerable: descriptor.enumerable,
-      configurable: descriptor.configurable,
-      writable: descriptor.writable,
-      value: descriptor.initializer ? descriptor.initializer.call(context) : void 0
-    });
-  }
-
-  function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  }
-
-  function _applyDecoratedDescriptor(target, property, decorators, descriptor, context) {
-    var desc = {};
-    Object['ke' + 'ys'](descriptor).forEach(function (key) {
-      desc[key] = descriptor[key];
-    });
-    desc.enumerable = !!desc.enumerable;
-    desc.configurable = !!desc.configurable;
-
-    if ('value' in desc || desc.initializer) {
-      desc.writable = true;
-    }
-
-    desc = decorators.slice().reverse().reduce(function (desc, decorator) {
-      return decorator(target, property, desc) || desc;
-    }, desc);
-
-    if (context && desc.initializer !== void 0) {
-      desc.value = desc.initializer ? desc.initializer.call(context) : void 0;
-      desc.initializer = undefined;
-    }
-
-    if (desc.initializer === void 0) {
-      Object['define' + 'Property'](target, property, desc);
-      desc = null;
-    }
-
-    return desc;
-  }
-
-  function _initializerWarningHelper(descriptor, context) {
-    throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');
-  }
-
-  var _dec, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6;
-
-  var CardNotification = exports.CardNotification = (_dec = (0, _aureliaFramework.customElement)('card-notification'), _dec(_class = (_class2 = function () {
-    function CardNotification() {
-      _classCallCheck(this, CardNotification);
-
-      _initDefineProp(this, 'locale', _descriptor, this);
-
-      _initDefineProp(this, 'type', _descriptor2, this);
-
-      _initDefineProp(this, 'header', _descriptor3, this);
-
-      _initDefineProp(this, 'message', _descriptor4, this);
-
-      _initDefineProp(this, 'bespoke', _descriptor5, this);
-
-      _initDefineProp(this, 'closeNotification', _descriptor6, this);
-    }
-
-    CardNotification.prototype.callClose = function callClose() {
-      this.closeNotification();
-    };
-
-    return CardNotification;
-  }(), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, 'locale', [_aureliaFramework.bindable], {
-    enumerable: true,
-    initializer: null
-  }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, 'type', [_aureliaFramework.bindable], {
-    enumerable: true,
-    initializer: null
-  }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, 'header', [_aureliaFramework.bindable], {
-    enumerable: true,
-    initializer: null
-  }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, 'message', [_aureliaFramework.bindable], {
-    enumerable: true,
-    initializer: null
-  }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, 'bespoke', [_aureliaFramework.bindable], {
-    enumerable: true,
-    initializer: null
-  }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, 'closeNotification', [_aureliaFramework.bindable], {
-    enumerable: true,
-    initializer: null
-  })), _class2)) || _class);
-});
 define('components/component-template/component-template',['exports', 'aurelia-framework'], function (exports, _aureliaFramework) {
   'use strict';
 
@@ -397,6 +296,107 @@ define('components/component-template/component-template',['exports', 'aurelia-f
 
     return ComponentTemplate;
   }(), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, 'locale', [_aureliaFramework.bindable], {
+    enumerable: true,
+    initializer: null
+  })), _class2)) || _class);
+});
+define('components/card-notification/card-notification',['exports', 'aurelia-framework'], function (exports, _aureliaFramework) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.CardNotification = undefined;
+
+  function _initDefineProp(target, property, descriptor, context) {
+    if (!descriptor) return;
+    Object.defineProperty(target, property, {
+      enumerable: descriptor.enumerable,
+      configurable: descriptor.configurable,
+      writable: descriptor.writable,
+      value: descriptor.initializer ? descriptor.initializer.call(context) : void 0
+    });
+  }
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  function _applyDecoratedDescriptor(target, property, decorators, descriptor, context) {
+    var desc = {};
+    Object['ke' + 'ys'](descriptor).forEach(function (key) {
+      desc[key] = descriptor[key];
+    });
+    desc.enumerable = !!desc.enumerable;
+    desc.configurable = !!desc.configurable;
+
+    if ('value' in desc || desc.initializer) {
+      desc.writable = true;
+    }
+
+    desc = decorators.slice().reverse().reduce(function (desc, decorator) {
+      return decorator(target, property, desc) || desc;
+    }, desc);
+
+    if (context && desc.initializer !== void 0) {
+      desc.value = desc.initializer ? desc.initializer.call(context) : void 0;
+      desc.initializer = undefined;
+    }
+
+    if (desc.initializer === void 0) {
+      Object['define' + 'Property'](target, property, desc);
+      desc = null;
+    }
+
+    return desc;
+  }
+
+  function _initializerWarningHelper(descriptor, context) {
+    throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');
+  }
+
+  var _dec, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6;
+
+  var CardNotification = exports.CardNotification = (_dec = (0, _aureliaFramework.customElement)('card-notification'), _dec(_class = (_class2 = function () {
+    function CardNotification() {
+      _classCallCheck(this, CardNotification);
+
+      _initDefineProp(this, 'locale', _descriptor, this);
+
+      _initDefineProp(this, 'type', _descriptor2, this);
+
+      _initDefineProp(this, 'header', _descriptor3, this);
+
+      _initDefineProp(this, 'message', _descriptor4, this);
+
+      _initDefineProp(this, 'bespoke', _descriptor5, this);
+
+      _initDefineProp(this, 'closeNotification', _descriptor6, this);
+    }
+
+    CardNotification.prototype.callClose = function callClose() {
+      this.closeNotification();
+    };
+
+    return CardNotification;
+  }(), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, 'locale', [_aureliaFramework.bindable], {
+    enumerable: true,
+    initializer: null
+  }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, 'type', [_aureliaFramework.bindable], {
+    enumerable: true,
+    initializer: null
+  }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, 'header', [_aureliaFramework.bindable], {
+    enumerable: true,
+    initializer: null
+  }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, 'message', [_aureliaFramework.bindable], {
+    enumerable: true,
+    initializer: null
+  }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, 'bespoke', [_aureliaFramework.bindable], {
+    enumerable: true,
+    initializer: null
+  }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, 'closeNotification', [_aureliaFramework.bindable], {
     enumerable: true,
     initializer: null
   })), _class2)) || _class);
@@ -2483,138 +2483,6 @@ define('routes/cards/error/error',['exports', 'resources/report-card', 'aurelia-
     return Error;
   }()) || _class);
 });
-define('routes/cards/photo/photo',['exports', 'aurelia-framework', 'jquery', 'resources/report-card', 'aurelia-event-aggregator'], function (exports, _aureliaFramework, _jquery, _reportCard, _aureliaEventAggregator) {
-  'use strict';
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.Photo = undefined;
-
-  var _jquery2 = _interopRequireDefault(_jquery);
-
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-      default: obj
-    };
-  }
-
-  function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  }
-
-  var _dec, _class;
-
-  var wrapper;
-  var cntxt;
-
-  var Photo = exports.Photo = (_dec = (0, _aureliaFramework.inject)(_aureliaEventAggregator.EventAggregator, _reportCard.ReportCard), _dec(_class = function () {
-    function Photo(ea, ReportCard) {
-      _classCallCheck(this, Photo);
-
-      this.ea = ea;
-      this.reportcard = ReportCard;
-      this.locale = this.reportcard.locale;
-      if (this.reportcard.photo.file) {
-        this.haveImg = true;
-      }
-      this.enableUpload = true;
-    }
-
-    Photo.prototype.uploadSupported = function uploadSupported() {
-      var nua = navigator.userAgent.toLowerCase();
-      var version;
-      if (nua.indexOf('android') >= 0 && nua.indexOf('chrome') === -1) {
-        var rest = nua.substring(nua.indexOf('android') + 8, nua.length);
-        version = rest.substring(0, 3);
-        return parseFloat(version) >= 4.4;
-      } else {
-        return true;
-      }
-    };
-
-    Photo.prototype.attached = function attached() {
-      if (this.uploadSupported()) {
-        wrapper = this.preview;
-        cntxt = wrapper.getContext('2d');
-        (0, _jquery2.default)('#previewWrapper').addClass('enabled');
-      } else {
-        this.ea.publish('upload', 'error');
-        this.enableUpload = false;
-      }
-      if (this.haveImg) {
-        this.drawImage(this.reportcard.photo.rotation);
-        (0, _jquery2.default)('#rotateButton').prop("disabled", false);
-        (0, _jquery2.default)('#deleteButton').prop("disabled", false);
-      }
-    };
-
-    Photo.prototype.sendClick = function sendClick() {
-      (0, _jquery2.default)('#ghostButton').trigger('click');
-      this.notify = false;
-    };
-
-    Photo.prototype.drawImage = function drawImage(deg) {
-      wrapper.width = (0, _jquery2.default)('#canvas').width();
-      wrapper.height = (0, _jquery2.default)('#canvas').height();
-      var reader = new FileReader();
-      reader.onload = function (e) {
-        var reviewImg = new Image();
-        reviewImg.onload = function () {
-          var imgW = void 0;
-          var imgH = void 0;
-          var trlX = -wrapper.width / 2;
-          var trlY = -wrapper.height / 2;
-          if (reviewImg.width >= reviewImg.height) {
-            imgH = wrapper.height;
-            imgW = Math.round(reviewImg.width * imgH / reviewImg.height);
-            trlX = trlX + Math.round((wrapper.width - imgW) / 2);
-          } else {
-            imgW = wrapper.width;
-            imgH = Math.round(reviewImg.height * imgW / reviewImg.width);
-            trlY = trlY + Math.round((wrapper.height - imgH) / 2);
-          }
-          cntxt.translate(wrapper.width / 2, wrapper.height / 2);
-          cntxt.rotate(deg * Math.PI / 180);
-          cntxt.drawImage(reviewImg, trlX, trlY, imgW, imgH);
-        };
-        reviewImg.src = e.target.result;
-      };
-      reader.readAsDataURL(this.reportcard.photo.file[0]);
-      (0, _jquery2.default)('#rotateButton').prop("disabled", false);
-      (0, _jquery2.default)('#deleteButton').prop("disabled", false);
-    };
-
-    Photo.prototype.sizeCheck = function sizeCheck() {
-      if (this.reportcard.photo.file[0]) {
-        if (this.reportcard.photo.file[0].size < 4404019) {
-          this.drawImage(0);
-        } else {
-          this.ea.publish('size', 'error');
-          this.reportcard.photo.file = null;
-        }
-      }
-    };
-
-    Photo.prototype.rotatePhoto = function rotatePhoto() {
-      this.reportcard.photo.rotation += 90;
-      this.drawImage(this.reportcard.photo.rotation);
-    };
-
-    Photo.prototype.deletePhoto = function deletePhoto() {
-      cntxt.translate(-wrapper.width / 2, -wrapper.height / 2);
-      cntxt.clearRect(0, 0, wrapper.width, wrapper.height);
-      this.reportcard.photo.file = null;
-      (0, _jquery2.default)('#rotateButton').prop("disabled", true);
-      (0, _jquery2.default)('#deleteButton').prop("disabled", true);
-      this.reportcard.photo.rotation = 0;
-    };
-
-    return Photo;
-  }()) || _class);
-});
 define('routes/cards/location/location',['exports', 'resources/config', 'leaflet', 'aurelia-framework', 'resources/report-card', 'aurelia-event-aggregator'], function (exports, _config, _leaflet, _aureliaFramework, _reportCard, _aureliaEventAggregator) {
   'use strict';
 
@@ -2749,6 +2617,138 @@ define('routes/cards/location/location',['exports', 'resources/config', 'leaflet
     };
 
     return Location;
+  }()) || _class);
+});
+define('routes/cards/photo/photo',['exports', 'aurelia-framework', 'jquery', 'resources/report-card', 'aurelia-event-aggregator'], function (exports, _aureliaFramework, _jquery, _reportCard, _aureliaEventAggregator) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.Photo = undefined;
+
+  var _jquery2 = _interopRequireDefault(_jquery);
+
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+      default: obj
+    };
+  }
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  var _dec, _class;
+
+  var wrapper;
+  var cntxt;
+
+  var Photo = exports.Photo = (_dec = (0, _aureliaFramework.inject)(_aureliaEventAggregator.EventAggregator, _reportCard.ReportCard), _dec(_class = function () {
+    function Photo(ea, ReportCard) {
+      _classCallCheck(this, Photo);
+
+      this.ea = ea;
+      this.reportcard = ReportCard;
+      this.locale = this.reportcard.locale;
+      if (this.reportcard.photo.file) {
+        this.haveImg = true;
+      }
+      this.enableUpload = true;
+    }
+
+    Photo.prototype.uploadSupported = function uploadSupported() {
+      var nua = navigator.userAgent.toLowerCase();
+      var version;
+      if (nua.indexOf('android') >= 0 && nua.indexOf('chrome') === -1) {
+        var rest = nua.substring(nua.indexOf('android') + 8, nua.length);
+        version = rest.substring(0, 3);
+        return parseFloat(version) >= 4.4;
+      } else {
+        return true;
+      }
+    };
+
+    Photo.prototype.attached = function attached() {
+      if (this.uploadSupported()) {
+        wrapper = this.preview;
+        cntxt = wrapper.getContext('2d');
+        (0, _jquery2.default)('#previewWrapper').addClass('enabled');
+      } else {
+        this.ea.publish('upload', 'error');
+        this.enableUpload = false;
+      }
+      if (this.haveImg) {
+        this.drawImage(this.reportcard.photo.rotation);
+        (0, _jquery2.default)('#rotateButton').prop("disabled", false);
+        (0, _jquery2.default)('#deleteButton').prop("disabled", false);
+      }
+    };
+
+    Photo.prototype.sendClick = function sendClick() {
+      (0, _jquery2.default)('#ghostButton').trigger('click');
+      this.notify = false;
+    };
+
+    Photo.prototype.drawImage = function drawImage(deg) {
+      wrapper.width = (0, _jquery2.default)('#canvas').width();
+      wrapper.height = (0, _jquery2.default)('#canvas').height();
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        var reviewImg = new Image();
+        reviewImg.onload = function () {
+          var imgW = void 0;
+          var imgH = void 0;
+          var trlX = -wrapper.width / 2;
+          var trlY = -wrapper.height / 2;
+          if (reviewImg.width >= reviewImg.height) {
+            imgH = wrapper.height;
+            imgW = Math.round(reviewImg.width * imgH / reviewImg.height);
+            trlX = trlX + Math.round((wrapper.width - imgW) / 2);
+          } else {
+            imgW = wrapper.width;
+            imgH = Math.round(reviewImg.height * imgW / reviewImg.width);
+            trlY = trlY + Math.round((wrapper.height - imgH) / 2);
+          }
+          cntxt.translate(wrapper.width / 2, wrapper.height / 2);
+          cntxt.rotate(deg * Math.PI / 180);
+          cntxt.drawImage(reviewImg, trlX, trlY, imgW, imgH);
+        };
+        reviewImg.src = e.target.result;
+      };
+      reader.readAsDataURL(this.reportcard.photo.file[0]);
+      (0, _jquery2.default)('#rotateButton').prop("disabled", false);
+      (0, _jquery2.default)('#deleteButton').prop("disabled", false);
+    };
+
+    Photo.prototype.sizeCheck = function sizeCheck() {
+      if (this.reportcard.photo.file[0]) {
+        if (this.reportcard.photo.file[0].size < 4404019) {
+          this.drawImage(0);
+        } else {
+          this.ea.publish('size', 'error');
+          this.reportcard.photo.file = null;
+        }
+      }
+    };
+
+    Photo.prototype.rotatePhoto = function rotatePhoto() {
+      this.reportcard.photo.rotation += 90;
+      this.drawImage(this.reportcard.photo.rotation);
+    };
+
+    Photo.prototype.deletePhoto = function deletePhoto() {
+      cntxt.translate(-wrapper.width / 2, -wrapper.height / 2);
+      cntxt.clearRect(0, 0, wrapper.width, wrapper.height);
+      this.reportcard.photo.file = null;
+      (0, _jquery2.default)('#rotateButton').prop("disabled", true);
+      (0, _jquery2.default)('#deleteButton').prop("disabled", true);
+      this.reportcard.photo.rotation = 0;
+    };
+
+    return Photo;
   }()) || _class);
 });
 define('routes/cards/review/review',['exports', 'resources/report-card', 'aurelia-framework', 'aurelia-event-aggregator'], function (exports, _reportCard, _aureliaFramework, _aureliaEventAggregator) {
@@ -3009,32 +3009,32 @@ define('text!components/gauge-info/gauge-info.html', ['module'], function(module
 define('text!components/report-info/report-info.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"./report-info.css\"></require>\n  <div  id=\"photoPreview\">\n    <img class=\"image\" id=\"hasPhoto\" if.bind=\"imageurl\" src.bind=\"imageurl\">\n    <div class=\"image\" id=\"noPhoto\" if.bind=\"!imageurl\">\n      <i class=\"icon-flood\"></i>\n    </div>\n  </div>\n\n  <div id=\"textPreview\">\n    <div id=\"bodyWrapper\">\n      <p if.bind=\"title\" class=\"textTitle\">${title}</p>\n      <p if.bind=\"height\" class=\"textTitle\">${locale.report_info.water_depth}:&nbsp;${height}cm</p>\n      <p id=\"source\">${locale.report_info.source}&nbsp;<a target=\"_blank\" href.bind=\"links[source]\"><img id=\"sourceImg\" src.bind=\"'assets/icons/img_' + source + '.svg'\" width=\"18\" height=\"18\"></img></a></p>\n      <p id=\"timeStamp\">${timestamp}</p>\n      <p id=\"textBody\">${text}</p>\n    </div>\n\n    <div id=\"socialIcons\">\n      <a repeat.for=\"button of shareButtons\" href.bind=\"button.intent\">\n        <i class.bind=\"'icon-' + button.name\"></i>\n      </a>\n    </div>\n  </div>\n</template>\n"; });
 define('text!components/component-template/component-template.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n"; });
 define('text!components/side-pane/side-pane.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"./side-pane.css\"></require>\n  <div id=\"tabsBar\">\n    <ul class=\"tabs\">\n      <li class=\"paneTabs\" repeat.for=\"tabName of tabList\">\n        <div class=\"tabLinks\" id.bind=\"'button-' + tabName\" click.delegate=\"switchTab(tabName)\">\n          <i class.bind=\"'icon-' + tabName\"></i>\n          <p textcontent.bind=\"locale.web_menu.tab_names[tabName]\"></p>\n        </div>\n      </li>\n      <li class=\"langTab\">\n        <div repeat.for=\"language of languages\">\n          <label id.bind=\"language\" class=\"langLabels\" if.bind = \"language!=='id'\">\n            <input type=\"radio\" model.bind=\"language\" checked.bind=\"selLanguage\" change.delegate=\"switchLang(language)\">\n            ${language}\n          </label>\n        </div>\n      </li>\n    </ul>\n  </div>\n\n  <div id=\"paneContent\">\n    <div id=\"content-map\" if.bind=\"tab === 'map'\" class=\"contentWrapper\">\n      <p>${locale.map_helper}</p>\n      <label repeat.for=\"city of cities\">\n        <input type=\"radio\" model.bind=\"city\" checked.bind=\"selected\" change.delegate=\"switchCity(city)\">\n        ${city}\n      </label>\n\n      <table  width=\"300px\">\n        <tr>\n          <td>\n          <p id=\"legend\">${locale.legend.title}</p>\n          <td>\n        </tr>\n        <tr>\n          <td vertical-align=\"bottom\">\n            <p>${locale.legend.flood_gauges}</p>\n          </td>\n          <td vertical-align=\"bottom\">\n            <p>${locale.legend.flood_depth}</p>\n          </td>\n        </tr>\n        <tr>\n          <td>\n            <table >\n              <tr repeat.for=\"level of gauge_levels\">\n                <td>\n                  <img src.bind=\"level.icon\" height=\"30\">\n                </td>\n                <td>\n                  <p class=\"normal\">${level.text[selLanguage]}</p>\n                </td>\n              </tr>\n            </table>\n          </td>\n          <td>\n            <table>\n              <tr repeat.for=\"height of flood_depth\">\n                <td style.bind=\"'padding:0;font-size:30px;color: ' + height.color\">&#9632;\n                </td>\n                <td>\n                  <p class=\"normal\">${height.text[selLanguage]}</p>\n                </td>\n              </tr>\n            </table>\n          </td>\n        </tr>\n        </table>\n    </div>\n\n    <div id=\"content-report\" if.bind=\"tab === 'report'\" class=\"contentWrapper\">\n      <table id=\"reportTable\">\n        <tr repeat.for=\"video of videos\" class=\"vidRows\">\n          <td>\n            <table class=\"vidTable\">\n              <tr click.delegate=\"showVideo(video.platform)\">\n                <td class=\"labelRow\" id.bind=\"'label_' + video.platform\">\n                  <p class=\"labelText\">\n                    <i class.bind=\"'icon-' + video.platform\"></i>&nbsp;${locale.report_content[video.platform].title}\n                  </p>\n                  <p class=\"arrows down\" id.bind=\"'down_' + video.platform\">\n                    <i class=\"icon-down-open\"></i>\n                  </p>\n                  <p class=\"arrows up\" id.bind=\"'up_' + video.platform\">\n                    <i class=\"icon-up-open\"></i>\n                  </p>\n                </td>\n              </tr>\n              <tr class=\"wrapRow\">\n                <td>\n                  <div class=\"videoWrapper\" id.bind=\"'vid_' + video.platform\" ref.bind=\"'vid_' + video.platform\">\n                    <iframe width=\"300\" height=\"225\" allowfullscreen=\"allowfullscreen\" frameborder=\"0\" src.bind=\"video.source[selLanguage]\"></iframe>\n                    <br>\n                    <ul>\n                      <li repeat.for=\"step of locale.report_content[video.platform].steps\">\n                        <p>${step}</p>\n                      </li>\n                      <p if.bind=\"video.platform==='otherapps'\" innerhtml.bind=\"locale.report_content.otherapps.links\"></p>\n                    </ul>\n                  </div>\n                </td>\n              </tr>\n            </table>\n            <td>\n            </tr>\n          </table>\n        </div>\n\n        <div id=\"content-info\" if.bind=\"tab === 'info'\" class=\"contentWrapper\">\n          <table id=\"headLogos\">\n            <tr>\n              <td align=\"left\">\n                <a href=\"https://www.usaid.gov/\">\n                  <img id=\"usaidLogo\" src=\"assets/graphics/TataCenter_logo_web.png\">\n                </a>\n              </td>\n              <td align=\"right\">\n                <a href=\"http://urbanrisklab.org/\">\n                  <img id=\"urlLogo\" src=\"assets/graphics/URL_logo.svg\">\n                </a>\n              </td>\n            </tr>\n          </table>\n\n          <p id=\"intro\">${locale.info_content.intro}</p>\n\n          <table id=\"partners\">\n            <tr class=\"label\">\n              <td colspan=\"4\" cellpadding=\"0\" align=\"left\">\n                <p>${locale.info_content.partners.implementing}</p>\n              </td>\n            </tr>\n            <tr>\n              <td colspan=\"4\" align=\"center\">\n                <a href=\"http://www.bnpb.go.id/\">\n                  <img class=\"bnpbLogo\" src=\"assets/graphics/ChennaiCMC_logo.jpg\">\n                </a>\n              </td>\n            </tr>\n            <tr class=\"label\">\n              <td colspan=\"4\" cellpadding=\"0\" align=\"left\">\n                <p>${locale.info_content.partners.project}</p>\n              </td>\n            </tr>\n            <tr class=\"logos\">\n              <td colspan=\"2\" align=\"center\">\n                <a href=\"http://www.pdc.org/\">\n                  <img class=\"partnerLogo\" src=\"assets/graphics/pcd_logo.png\">\n                </a>\n              </td>\n              <td colspan=\"2\" align=\"center\">\n                <a href=\"https://hotosm.org/\">\n                  <img class=\"partnerLogo\" src=\"assets/graphics/Hot_logo.png\">\n                </a>\n              </td>\n            </tr>\n            <tr class=\"label\">\n              <td colspan=\"4\" cellpadding=\"0\" align=\"left\">\n                <p>${locale.info_content.partners.data}</p>\n              </td>\n            </tr>\n            <tr class=\"logos\">\n              <td colspan=\"2\" align=\"center\">\n                <a href=\"http://www.qlue.co.id/\">\n                  <img class=\"partnerLogo\" src=\"assets/graphics/qlue_logo.png\">\n                </a>\n              </td>\n              <td colspan=\"2\" align=\"center\">\n                <a href=\"http://pasangmata.detik.com/\">\n                  <img class=\"partnerLogo\" src=\"assets/graphics/pasang_logo.png\">\n                </a>\n              </td>\n            </tr>\n              <tr class=\"logos\">\n                <td colspan=\"2\" align=\"center\">\n                  <a href=\"https://www.zurich.co.id/id-id/kampanye-kami/zurich-alert-the-alert-you-really-need\">\n                    <img class=\"partnerLogo\" src=\"assets/graphics/zAlert_logo.png\">\n                  </a>\n                </td>\n              <td colspan=\"2\" align=\"center\">\n                <a href=\"https://twitter.com\">\n                  <img class=\"partnerLogo\" src=\"assets/graphics/twitter-logo.png\">\n                </a>\n              </td>\n            </tr>\n          </table>\n\n          <p innerhtml.bind=\"locale.info_content.p1\"></p>\n          <p innerhtml.bind=\"locale.info_content.p2\"></p>\n          <p innerhtml.bind=\"locale.info_content.p3\"></p>\n          <p id=\"disclaimer\">\n            ${locale.info_content.privacy}<br>\n            <i>${locale.info_content.disclaimer}</i>\n          </p>\n          <p>${locale.info_content.mapCredits} © <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a></p>\n          <p id=\"usaid\">\n            ${locale.info_content.USAID}\n          </p>\n          <div id=\"pbLogo\">\n            <img src=\"assets/graphics/Riskmap_logo_noSub.svg\">\n          </div>\n        </div>\n      </div>\n    </template>\n"; });
-define('text!components/disaster-map/disaster-map.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#mapContainer {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  margin: 0px;\n  padding: 0px;\n}\n#notification {\n  font-family: Roboto-Light, Roboto, sans-serif;\n  font-size: 12px;\n  white-space: nowrap;\n  padding: 5px;\n  border-radius: 5px;\n  color: #ffffff;\n  position: relative;\n  top: 45px;\n}\n"; });
 define('text!routes/cards/cards.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"./cards.css\"></require>\n  <require from=\"../../components/card-notification/card-notification\"></require>\n  <div id=\"cardWrapper\">\n    <div id=\"cardTitle\" if.bind=\"(count < 7)\">\n      <div id=\"alert\" if.bind=\"test_card\" click.trigger=\"logUserAgent()\">\n        <p><i class=\"icon-attention-circled\"></i></p>\n      </div>\n      <p id=\"titleText\">${locale.card_titles[router.routes[cardNo].route]}</p>\n      <div id=\"langSwitch\">\n        <label repeat.for=\"language of reportcard.languages\" id.bind=\"language\" class=\"langLabels\">\n          <input type=\"radio\" model.bind=\"language\" checked.bind=\"reportcard.selLanguage\" change.delegate=\"switchLang(language)\">\n          &nbsp;&nbsp;${language}&nbsp;\n        </label>\n      </div>\n      <div id=\"tabRow\">\n        <button repeat.for=\"i of (totalCards - 3)\" class=\"tabButtons\" disabled.bind=\"!(i < count)\"></button>\n      </div>\n    </div>\n    <div id=\"cardContent\">\n      <router-view></router-view>\n      <card-notification locale.bind=\"locale\" type.bind=\"notify_type\" header.bind=\"notify_header\" message.bind=\"notify_message\" bespoke.bind=\"notify_custom\" close-notification.call=\"closeNotification()\"></card-notification>\n    </div>\n    <div id=\"cardNavigation\" if.bind=\"(count < 7)\">\n      <button id=\"prv\" click.trigger=\"prevCard()\" disabled.bind=\"prevDisabled\" class=\"navBtn\"><i class=\"icon-left-open\"></i>${locale.card_hints.previous}</button>\n      <button id=\"nxt\" click.trigger=\"nextCard()\" disabled.bind=\"nextDisabled\" class=\"navBtn\">${locale.card_hints.next}<i class=\"icon-right-open\"></i></button>\n    </div>\n  </div>\n</template>\n"; });
-define('text!components/flood-info/flood-info.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#flood-title {\n  position: relative;\n  width: 92%;\n}\n#flood-title p {\n  margin: 0;\n  padding: 10px;\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  color: #31aade;\n  text-align: center;\n}\n#flood-title p b {\n  color: #2f2f2f;\n}\n#flood-state {\n  position: relative;\n  width: 92%;\n}\n#flood-state p {\n  margin: 0;\n  padding: 5px;\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  color: #2f2f2f;\n  text-align: center;\n}\n#flood-state #severity {\n  color: #31aade;\n  text-transform: uppercase;\n}\n#flood-state #updated {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 12px;\n  color: #424242;\n}\n"; });
 define('text!routes/landing/landing.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"./landing.css\"></require>\n  <require from=\"leaflet/leaflet.css\"></require>\n  <require from=\"../../components/disaster-map/disaster-map\"></require>\n  <require from=\"../../components/report-info/report-info\"></require>\n  <require from=\"../../components/gauge-info/gauge-info\"></require>\n  <require from=\"../../components/flood-info/flood-info\"></require>\n  <require from=\"../../components/side-pane/side-pane\"></require>\n\n  <div id=\"pageWrapper\">\n    <div id=\"screen\">\n      <div id=\"cityPopup\">\n        <p>${webMenu.locale.map_helper}</p>\n        <label repeat.for=\"city of mapModel.cities\">\n          <input type=\"radio\" model.bind=\"city\" selected.two-way=\"mapModel.selected_city\" change.delegate=\"mapModel.viewReports(city, true)\">\n          ${city}\n          <br>\n        </label>\n      </div>\n    </div>\n\n    <disaster-map id=\"map\" view-model.ref=\"mapModel\" querycity.bind=\"queried_city\" reportid.two-way=\"report_id\" reset-tab.call=\"webMenu.switchTab($event)\">\n    </disaster-map>\n\n    <div id=\"topBar\">\n      <div id=\"logo_top\">\n        <a href=\"map\">\n          <img id=\"pbLogo\" src=\"assets/graphics/Riskmap_logo_noSub.svg\" width=\"180\">\n        </a>\n      </div>\n      <div class=\"menuBtn active\" click.delegate=\"mapModel.togglePane('#sidePane', 'show', true)\">\n        <i class=\"icon-add-report\"></i>\n      </div>\n      <div class=\"menuBtn\" id=\"closeSidePane\" click.delegate=\"mapModel.togglePane('#sidePane', 'hide', false)\">\n        <i class=\"icon-cancel-circled-outline\"></i>\n      </div>\n    </div>\n\n    <div id=\"infoPane\">\n      <div class=\"closeBtn\" click.delegate=\"mapModel.togglePane('#infoPane', 'hide', true)\">\n        <i class=\"icon-cancel-circled-outline\" aria-hidden=\"true\"></i>\n      </div>\n      <gauge-info class=\"infoWrapper\" name.bind=\"mapModel.layers.popupContent.gauge_name\">\n      </gauge-info>\n      <flood-info class=\"infoWrapper\" if.bind=\"mapModel.layers.popupContent.state\" locale.bind=\"webMenu.locale\" areaname.bind=\"mapModel.layers.popupContent.area_name\" districtname.bind=\"mapModel.layers.popupContent.parent_name\" state.bind=\"mapModel.layers.popupContent.state\" updated.bind=\"mapModel.layers.formatTime(mapModel.layers.popupContent.last_updated)\">\n      </flood-info>\n      <report-info class=\"infoWrapper\" if.bind=\"mapModel.layers.popupContent.pkey\" locale.two-way=\"webMenu.locale\" pkey.bind=\"mapModel.layers.popupContent.pkey\" city.bind=\"mapModel.utility.parseCityName(mapModel.layers.popupContent.tags.instance_region_code, mapModel.cities)\" imageurl.bind=\"mapModel.layers.popupContent.image_url\" height.bind=\"mapModel.layers.popupContent.report_data.flood_depth\" title.bind=\"mapModel.layers.popupContent.title\" text.bind=\"mapModel.layers.popupContent.text\" timestamp.bind=\"mapModel.layers.popupContent.timestamp\" source.bind=\"mapModel.layers.popupContent.source\">\n      </report-info>\n    </div>\n\n    <div id=\"sidePane\">\n      <side-pane cities.bind=\"mapModel.cities\" selected.two-way=\"mapModel.selected_city\" change-city.call=\"mapModel.viewReports($event, $event)\" close-pane.call=\"mapModel.togglePane('#sidePane', 'hide', false)\" reportId.two-way=\"report_id\" view-model.ref=\"webMenu\">\n      </side-pane>\n    </div>\n  </div>\n</template>\n"; });
-define('text!routes/cards/card-template/card-template.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"./card-template.css\"></require>\n  <div id=\"cardTemplateWrapper\">\n    <!-- html content of card goes here -->\n  </div>\n</template>\n"; });
-define('text!components/gauge-info/gauge-info.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#chart-title {\n  position: relative;\n  width: 92%;\n}\n#chart-title p {\n  margin: 0;\n  padding: 0;\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 13px;\n  color: #424242;\n  color: #31aade;\n  text-align: center;\n}\n#chart-pane {\n  position: relative;\n  width: 92%;\n}\n#chart-pane canvas {\n  width: 80%!important;\n  height: 80%!important;\n  margin: 0 auto;\n  padding: 0;\n}\n"; });
+define('text!components/disaster-map/disaster-map.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#mapContainer {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  margin: 0px;\n  padding: 0px;\n}\n#notification {\n  font-family: Roboto-Light, Roboto, sans-serif;\n  font-size: 12px;\n  white-space: nowrap;\n  padding: 5px;\n  border-radius: 5px;\n  color: #ffffff;\n  position: relative;\n  top: 45px;\n}\n"; });
 define('text!routes/cards/card-landing/card-landing.html', ['module'], function(module) { module.exports = "<template>\n  <div style=\"width: 100%; height: 100%;\">\n  </div>\n</template>\n"; });
-define('text!routes/cards/description/description.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"./description.css\"></require>\n  <div id=\"descriptionWrapper\">\n    <textarea id=\"textarea\" maxlength=\"140\" placeholder.bind=\"reportcard.locale.card_hints.description\" value.bind=\"reportcard.description.value\" click.delegate=\"onFocus()\" focus.delegate=\"onFocus()\" focusout.delegate=\"onBlur()\"></textarea>\n    <div id=\"modBtnWrapper\">\n      <button id=\"clearButton\" class=\"modBtn\" click.delegate=\"clearText()\" disabled.bind=\"!reportcard.description.value || focussed\"><i class=\"icon-block\"></i></button>\n      <button id=\"closeButton\" class=\"modBtn\" if.bind=\"isMobile && focussed\" click.delegate=\"onBlur()\"><i class=\"icon-keyboard\" id=\"#keyClose\"></i><i class=\"icon-down-open\"></i></button>\n      <button id=\"openButton\" class=\"modBtn\" if.bind=\"isMobile && !focussed\" click.delegate=\"setFocus()\"><i class=\"icon-up-open\"></i><i class=\"icon-keyboard\" id=\"#keyOpen\"></i></button>\n      <p if.bind=\"reportcard.description.value\">${reportcard.description.value.length}/140</p>\n    </div>\n  </div>\n</template>\n"; });
-define('text!components/report-info/report-info.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#photoPreview {\n  position: relative;\n  width: 40%;\n  height: 90%;\n  float: left;\n  background-color: #000000;\n}\n#photoPreview .image {\n  position: absolute;\n  top: 50%;\n  -ms-transform: translate(-50%, -50%);\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  z-index: 2;\n}\n#photoPreview .image#hasPhoto {\n  left: 50%;\n  max-width: 100%;\n  max-height: 100%;\n}\n#photoPreview .image#noPhoto {\n  left: 40%;\n  font-size: 80px;\n  color: white;\n}\n#textPreview {\n  position: relative;\n  width: 55%;\n  height: 90%;\n  float: right;\n  overflow: hidden;\n}\n#textPreview #bodyWrapper {\n  width: 85%;\n  height: 75%;\n  border-bottom: 1px solid #31aade;\n  overflow-y: scroll;\n}\n#textPreview #bodyWrapper .textTitle {\n  font-family: \"Roboto-Bold\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  padding: 0;\n  margin: 0 6px 6px 0;\n  color: #31aade;\n}\n#textPreview #bodyWrapper #timeStamp,\n#textPreview #bodyWrapper #source {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 12px;\n  color: #424242;\n  color: #808080;\n  width: 60%;\n  line-height: 18px;\n  margin: 0;\n  padding: 0;\n}\n#textPreview #bodyWrapper #timeStamp #sourceImg,\n#textPreview #bodyWrapper #source #sourceImg {\n  margin: 0;\n  padding: 0;\n}\n#textPreview #bodyWrapper #textBody {\n  font-family: \"Roboto\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  word-wrap: break-word;\n  padding: 0;\n  margin-top: 6px;\n}\n#textPreview #sourcelogo {\n  position: relative;\n  color: #808080;\n  width: 40%;\n  height: 20%;\n  float: right;\n  overflow: none;\n  border: solid 1px blue;\n  margin: 0 10px 0 0;\n}\n#textPreview #socialIcons {\n  position: absolute;\n  height: 18%;\n  bottom: 0px;\n}\n#textPreview #socialIcons a {\n  position: relative;\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 20px;\n  color: #424242;\n  cursor: pointer;\n  text-decoration: none;\n  padding: 0 12px 0 0;\n}\n@media (min-width: 420px) {\n  #textPreview #socialIcons a:hover {\n    color: #10b7ff;\n  }\n}\n#textPreview #socialIcons a:active {\n  color: #1f4963;\n}\n"; });
+define('text!routes/cards/card-template/card-template.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"./card-template.css\"></require>\n  <div id=\"cardTemplateWrapper\">\n    <!-- html content of card goes here -->\n  </div>\n</template>\n"; });
+define('text!components/flood-info/flood-info.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#flood-title {\n  position: relative;\n  width: 92%;\n}\n#flood-title p {\n  margin: 0;\n  padding: 10px;\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  color: #31aade;\n  text-align: center;\n}\n#flood-title p b {\n  color: #2f2f2f;\n}\n#flood-state {\n  position: relative;\n  width: 92%;\n}\n#flood-state p {\n  margin: 0;\n  padding: 5px;\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  color: #2f2f2f;\n  text-align: center;\n}\n#flood-state #severity {\n  color: #31aade;\n  text-transform: uppercase;\n}\n#flood-state #updated {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 12px;\n  color: #424242;\n}\n"; });
 define('text!routes/cards/depth/depth.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"./depth.css\"></require>\n  <require from=\"../../../components/depth-bg/depth-bg\"></require>\n\n  <div id=\"depthWrapper\">\n    <svg id=\"bgImage\">\n      <depth-bg></depth-bg>\n    </svg>\n    <div id=\"floodZone\">\n    </div>\n    <div id=\"sliderZone\">\n      <div id=\"knob\">\n      </div>\n      <div id=\"hTop\" class=\"knobHelper\">\n        <i class=\"icon-up-open\"></i>\n      </div>\n      <div id=\"hBottom\" class=\"knobHelper\">\n        <i class=\"icon-down-open\"></i>\n      </div>\n      <div id=\"depthText\" textcontent.bind=\"reportcard.depth + '&nbsp;cm'\">\n      </div>\n    </div>\n  </div>\n</template>\n"; });
+define('text!routes/cards/description/description.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"./description.css\"></require>\n  <div id=\"descriptionWrapper\">\n    <textarea id=\"textarea\" maxlength=\"140\" placeholder.bind=\"reportcard.locale.card_hints.description\" value.bind=\"reportcard.description.value\" click.delegate=\"onFocus()\" focus.delegate=\"onFocus()\" focusout.delegate=\"onBlur()\"></textarea>\n    <div id=\"modBtnWrapper\">\n      <button id=\"clearButton\" class=\"modBtn\" click.delegate=\"clearText()\" disabled.bind=\"!reportcard.description.value || focussed\"><i class=\"icon-block\"></i></button>\n      <button id=\"closeButton\" class=\"modBtn\" if.bind=\"isMobile && focussed\" click.delegate=\"onBlur()\"><i class=\"icon-keyboard\" id=\"#keyClose\"></i><i class=\"icon-down-open\"></i></button>\n      <button id=\"openButton\" class=\"modBtn\" if.bind=\"isMobile && !focussed\" click.delegate=\"setFocus()\"><i class=\"icon-up-open\"></i><i class=\"icon-keyboard\" id=\"#keyOpen\"></i></button>\n      <p if.bind=\"reportcard.description.value\">${reportcard.description.value.length}/140</p>\n    </div>\n  </div>\n</template>\n"; });
+define('text!components/gauge-info/gauge-info.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#chart-title {\n  position: relative;\n  width: 92%;\n}\n#chart-title p {\n  margin: 0;\n  padding: 0;\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 13px;\n  color: #424242;\n  color: #31aade;\n  text-align: center;\n}\n#chart-pane {\n  position: relative;\n  width: 92%;\n}\n#chart-pane canvas {\n  width: 80%!important;\n  height: 80%!important;\n  margin: 0 auto;\n  padding: 0;\n}\n"; });
 define('text!routes/cards/error/error.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"./error.css\"></require>\n\n  <div id=\"petalogo\">\n    <img src=\"assets/graphics/Riskmap_logo_noSub.svg\">\n  </div>\n  <div id=\"errorlogo\">\n    <i class=\"icon-block\"></i>\n  </div>\n\n  <div id=\"msgWrapper\">\n    <h2 if.bind=\"errorCode\">Error : ${errorCode}</h2>\n    <h2 if.bind=\"!errorCode\">Error</h2>\n    <br>\n    <p>${errorText}</p>\n    <br>\n    <a href=\"map/\">${locale.card_error_messages.link}</a>\n  </div>\n\n\n</template>\n"; });
-define('text!components/side-pane/side-pane.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#tabsBar {\n  position: relative;\n  width: 100%;\n  height: 45px;\n  border: none;\n  border-bottom: 1px solid #31aade;\n}\n#tabsBar ul.tabs {\n  position: absolute;\n  bottom: -4px;\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  width: 100%;\n}\n#tabsBar ul.tabs li {\n  float: left;\n  height: 100%;\n  text-align: center;\n}\n#tabsBar ul.tabs li.paneTabs {\n  width: 24%;\n}\n#tabsBar ul.tabs li.paneTabs div.tabLinks {\n  width: 100%;\n  cursor: pointer;\n  line-height: 40px;\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 21px;\n  color: #424242;\n}\n#tabsBar ul.tabs li.paneTabs div.tabLinks p {\n  display: none;\n  position: absolute;\n  bottom: -75%;\n  width: 24%;\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  color: #31aade;\n  line-height: 14px;\n  text-transform: capitalize;\n}\n#tabsBar ul.tabs li.paneTabs div.tabLinks.active {\n  color: #31aade;\n  border-bottom: 4px solid #31aade;\n}\n#tabsBar ul.tabs li.paneTabs div.tabLinks.active p {\n  display: block;\n}\n#tabsBar ul.tabs li.paneTabs div.tabLinks:hover {\n  color: #10b7ff;\n}\n#tabsBar ul.tabs li.paneTabs div.tabLinks:hover p {\n  display: block;\n  color: #10b7ff;\n}\n#tabsBar ul.tabs li.langTab {\n  position: absolute;\n  right: 0;\n  width: 24%;\n  margin-top: 6px;\n  padding: 0;\n}\n#tabsBar ul.tabs li.langTab div {\n  position: relative;\n  float: left;\n  width: 30%;\n  height: 60%;\n}\n#tabsBar ul.tabs li.langTab div:first-child {\n  border-right: 1px solid #31aade;\n}\n#tabsBar ul.tabs li.langTab div label {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 16px;\n  color: #424242;\n  line-height: 28px;\n  cursor: pointer;\n}\n#tabsBar ul.tabs li.langTab div label.active {\n  color: #31aade;\n}\n#tabsBar ul.tabs li.langTab div label:hover {\n  color: #10b7ff;\n}\n#tabsBar ul.tabs li.langTab div label input {\n  display: none;\n}\n#paneContent {\n  position: relative;\n  width: 100%;\n}\n#paneContent div.contentWrapper {\n  padding: 30px 12px 0 12px;\n}\n#paneContent div.contentWrapper#content-map {\n  overflow: hidden;\n}\n#paneContent div.contentWrapper#content-map p {\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  margin-bottom: 8px;\n}\n#paneContent div.contentWrapper#content-map label {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  cursor: pointer;\n  text-transform: capitalize;\n  padding-right: 10px;\n}\n@media (min-width: 420px) {\n  #paneContent div.contentWrapper#content-map label:hover {\n    color: #10b7ff;\n  }\n}\n#paneContent div.contentWrapper#content-map label:active {\n  color: #1f4963;\n}\n#paneContent div.contentWrapper#content-map .normal {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  text-transform: capitalize;\n  padding-right: 10px;\n  margin: 0;\n}\n#paneContent div.contentWrapper#content-map #legend {\n  margin-top: 20px;\n  border-bottom: 1px solid #31aade;\n}\n#paneContent div.contentWrapper#content-info {\n  overflow: hidden;\n}\n#paneContent div.contentWrapper#content-info #headLogos {\n  width: 90%;\n  margin: auto;\n  table-layout: fixed;\n}\n#paneContent div.contentWrapper#content-info #headLogos #usaidLogo {\n  width: 75%;\n}\n#paneContent div.contentWrapper#content-info #headLogos #urlLogo {\n  width: 100%;\n}\n#paneContent div.contentWrapper#content-info p {\n  font-family: \"Roboto\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  width: 90%;\n  margin: 15px auto;\n}\n#paneContent div.contentWrapper#content-info p a {\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  cursor: pointer;\n}\n@media (min-width: 420px) {\n  #paneContent div.contentWrapper#content-info p a:hover {\n    color: #10b7ff;\n  }\n}\n#paneContent div.contentWrapper#content-info p a:active {\n  color: #1f4963;\n}\n#paneContent div.contentWrapper#content-info p b {\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  color: #31aade;\n}\n#paneContent div.contentWrapper#content-info p#intro {\n  font-family: \"Roboto\", \"Roboto\", Open Sans;\n  font-size: 20px;\n  color: #424242;\n  text-align: center;\n  margin: 12px auto;\n  width: 90%;\n}\n#paneContent div.contentWrapper#content-info p#disclaimer i {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n}\n#paneContent div.contentWrapper#content-info p#usaid {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 12px;\n  color: #424242;\n}\n#paneContent div.contentWrapper#content-info #partners {\n  width: 90%;\n  margin: auto;\n  table-layout: fixed;\n  border-bottom: 1px solid #31aade;\n  padding-bottom: 10px;\n}\n#paneContent div.contentWrapper#content-info #partners tr.label {\n  height: 18px;\n}\n#paneContent div.contentWrapper#content-info #partners tr.label p {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 12px;\n  color: #424242;\n  margin: 10px 0 4px 0;\n  padding: 0;\n}\n#paneContent div.contentWrapper#content-info #partners .bnpbLogo {\n  width: 340px;\n}\n#paneContent div.contentWrapper#content-info #partners .partnerLogo {\n  height: 35px;\n  width: auto;\n  padding: 5px;\n}\n#paneContent div.contentWrapper#content-info #pbLogo {\n  width: 90%;\n  margin: 8px auto;\n  text-align: center;\n}\n#paneContent div.contentWrapper#content-info #pbLogo img {\n  width: 180px;\n}\n#paneContent div.contentWrapper#content-report {\n  overflow: hidden;\n}\n#paneContent div.contentWrapper#content-report table,\n#paneContent div.contentWrapper#content-report tr,\n#paneContent div.contentWrapper#content-report td {\n  padding: 0;\n  width: 100%;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable {\n  margin: 0;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr td {\n  border-bottom: 1px solid #31aade;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr td.labelRow {\n  cursor: pointer;\n  border: none;\n  font-family: \"Roboto\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr td.labelRow.active {\n  color: #31aade;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr td.labelRow:hover {\n  color: #10b7ff;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr td.labelRow p {\n  margin: 0;\n  padding: 0;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr td.labelRow p.labelText {\n  float: left;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr td.labelRow p.arrows {\n  float: right;\n  display: block;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr td.labelRow p.up {\n  display: none;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr.wrapRow .videoWrapper {\n  display: none;\n  width: 100%;\n  height: auto;\n  font-family: \"Roboto\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr.wrapRow .videoWrapper iframe {\n  width: 100%;\n  border: none;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr.wrapRow .videoWrapper p {\n  margin: 0;\n  padding: 0;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr.wrapRow .videoWrapper p ul {\n  list-style: none;\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  line-height: 21px;\n  padding: 0;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr.wrapRow .videoWrapper p a {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  cursor: pointer;\n  line-height: 21px;\n}\n@media (min-width: 420px) {\n  #paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr.wrapRow .videoWrapper p a:hover {\n    color: #10b7ff;\n  }\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr.wrapRow .videoWrapper p a:active {\n  color: #1f4963;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr.wrapRow .videoWrapper p a i {\n  font-size: 18px;\n}\n"; });
 define('text!routes/cards/location/location.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"leaflet/leaflet.css\"></require>\n  <require from=\"./location.css\"></require><!--place / access as per appropriate file structure-->\n  <div id=\"locationWrapper\">\n    <div id=\"mapWrapper\">\n    </div>\n    <div id=\"mapMarker\">\n      <i class=\"icon-banjir-pin\"></i>\n    </div>\n  </div>\n</template>\n"; });
+define('text!components/report-info/report-info.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#photoPreview {\n  position: relative;\n  width: 40%;\n  height: 90%;\n  float: left;\n  background-color: #000000;\n}\n#photoPreview .image {\n  position: absolute;\n  top: 50%;\n  -ms-transform: translate(-50%, -50%);\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  z-index: 2;\n}\n#photoPreview .image#hasPhoto {\n  left: 50%;\n  max-width: 100%;\n  max-height: 100%;\n}\n#photoPreview .image#noPhoto {\n  left: 40%;\n  font-size: 80px;\n  color: white;\n}\n#textPreview {\n  position: relative;\n  width: 55%;\n  height: 90%;\n  float: right;\n  overflow: hidden;\n}\n#textPreview #bodyWrapper {\n  width: 85%;\n  height: 75%;\n  border-bottom: 1px solid #31aade;\n  overflow-y: scroll;\n}\n#textPreview #bodyWrapper .textTitle {\n  font-family: \"Roboto-Bold\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  padding: 0;\n  margin: 0 6px 6px 0;\n  color: #31aade;\n}\n#textPreview #bodyWrapper #timeStamp,\n#textPreview #bodyWrapper #source {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 12px;\n  color: #424242;\n  color: #808080;\n  width: 60%;\n  line-height: 18px;\n  margin: 0;\n  padding: 0;\n}\n#textPreview #bodyWrapper #timeStamp #sourceImg,\n#textPreview #bodyWrapper #source #sourceImg {\n  margin: 0;\n  padding: 0;\n}\n#textPreview #bodyWrapper #textBody {\n  font-family: \"Roboto\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  word-wrap: break-word;\n  padding: 0;\n  margin-top: 6px;\n}\n#textPreview #sourcelogo {\n  position: relative;\n  color: #808080;\n  width: 40%;\n  height: 20%;\n  float: right;\n  overflow: none;\n  border: solid 1px blue;\n  margin: 0 10px 0 0;\n}\n#textPreview #socialIcons {\n  position: absolute;\n  height: 18%;\n  bottom: 0px;\n}\n#textPreview #socialIcons a {\n  position: relative;\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 20px;\n  color: #424242;\n  cursor: pointer;\n  text-decoration: none;\n  padding: 0 12px 0 0;\n}\n@media (min-width: 420px) {\n  #textPreview #socialIcons a:hover {\n    color: #10b7ff;\n  }\n}\n#textPreview #socialIcons a:active {\n  color: #1f4963;\n}\n"; });
 define('text!routes/cards/photo/photo.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"./photo.css\"></require>\n  <div id=\"photoWrapper\">\n    <div id=\"previewWrapper\" click.trigger=\"sendClick()\">\n      <i class=\"icon-camera\"></i>\n      <canvas ref=\"preview\" id=\"canvas\">\n      </canvas>\n    </div>\n    <div id=\"modBtnWrapper\">\n      <button id=\"changeButton\" class=\"modBtn\" click.delegate=\"sendClick()\" disabled.bind=\"!enableUpload\"><i class=\"icon-camera-1\"></i></button>\n      <button id=\"rotateButton\" class=\"modBtn\" click.delegate=\"rotatePhoto()\" disabled=\"true\"><i class=\"icon-cw-1\"></i></button>\n      <button id=\"deleteButton\" class=\"modBtn\" click.delegate=\"deletePhoto()\" disabled=\"true\"><i class=\"icon-trash-empty\"></i></button>\n    </div>\n  </div>\n\n  <input id=\"ghostButton\" style=\"display: none\" type=\"file\" accept=\"image/*\" files.bind=\"reportcard.photo.file\" change.delegate=\"sizeCheck()\">\n</template>\n"; });
-define('text!routes/cards/cards.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n@media screen {\n  #cardWrapper {\n    position: relative;\n  }\n}\n@media screen and (min-width: 240px) {\n  #cardWrapper {\n    width: 100%;\n  }\n}\n@media screen and (min-width: 240px) and (min-height: 200px) {\n  #cardWrapper {\n    height: 100%;\n  }\n}\n@media screen and (min-width: 240px) and (min-height: 720px) {\n  #cardWrapper {\n    height: 720px;\n    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);\n  }\n}\n@media screen and (min-width: 420px) {\n  #cardWrapper {\n    width: 420px;\n    margin: auto;\n    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);\n  }\n}\n@media screen and (min-width: 420px) and (min-height: 200px) {\n  #cardWrapper {\n    height: 100%;\n  }\n}\n@media screen and (min-width: 420px) and (min-height: 720px) {\n  #cardWrapper {\n    height: 720px;\n  }\n}\n#cardTitle {\n  position: relative;\n  margin: 0px;\n  padding: 0px;\n  width: 100%;\n  height: 50px;\n  /* height + padding-top + padding-bottom = 50px */\n  background-color: #424242;\n}\n#cardTitle #alert {\n  position: absolute;\n  top: 8px;\n  left: 6px;\n  cursor: pointer;\n  z-index: 10;\n}\n#cardTitle #alert p {\n  padding: 0;\n  margin: 0;\n  font-size: 26px;\n  color: #ffffff;\n}\n#cardTitle #alert p i {\n  z-index: 5;\n}\n#cardTitle #titleText {\n  position: absolute;\n  width: 100%;\n  font-family: \"Roboto Medium\", \"Roboto\", Open Sans;\n  color: #ffffff;\n  font-size: 16px;\n  text-align: center;\n}\n#cardTitle #langSwitch {\n  position: absolute;\n  top: 18px;\n  right: 15px;\n}\n#cardTitle #langSwitch label {\n  font-size: 14px;\n  font-family: \"Roboto Medium\", \"Roboto\", Open Sans;\n  color: #ffffff;\n  cursor: pointer;\n}\n#cardTitle #langSwitch label input {\n  display: none;\n}\n#cardTitle #langSwitch label:first-child {\n  border-right: 1px solid #ffffff;\n}\n#cardTitle #langSwitch label.active {\n  color: #31aade;\n}\n#tabRow {\n  position: absolute;\n  width: 100%;\n  bottom: 0px;\n}\n.tabButtons {\n  position: relative;\n  margin: 0px;\n  padding: 0px;\n  width: 20%;\n  height: 5px;\n  border: none;\n  background-color: #31aade;\n  float: left;\n  outline: none;\n}\n.tabButtons:disabled {\n  opacity: 0.25;\n}\n#cardContent {\n  position: relative;\n  width: 100%;\n  height: 50%;\n  /*Change on the fly*/\n  text-align: center;\n  z-index: 3;\n  background-color: #808080;\n  overflow: hidden;\n}\n#cardNavigation {\n  position: absolute;\n  align-content: center;\n  margin: 0px;\n  padding: 0px;\n  background-color: #808080;\n  bottom: 0px;\n  width: 100%;\n  height: 50px;\n  overflow: hidden;\n}\n#cardNavigation .navBtn {\n  position: relative;\n  color: #ffffff;\n  width: 50%;\n  height: 50px;\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 16px;\n  line-height: 50px;\n  background: #424242;\n  border: none;\n  outline: none;\n  z-index: 4;\n  margin: 0px;\n  padding: 0px;\n  float: left;\n}\n#cardNavigation .navBtn#prv {\n  border-right: 1px solid #808080;\n}\n#cardNavigation .navBtn:disabled {\n  color: #5e5e5e;\n}\n#cardNavigation .navBtn:active {\n  background: #5e5e5e;\n  transform: translateY(1px);\n}\n"; });
 define('text!routes/cards/review/review.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"./review.css\"></require>\n  <div id=\"reviewWrapper\">\n    <div id=\"summaryCard\">\n      <div id=\"summaryPhoto\">\n        <canvas id=\"photo\" ref=\"preview\">\n        </canvas>\n        <i class=\"icon-flood\"></i>\n      </div>\n      <div id=\"summaryTextWrapper\">\n        <p id=\"floodH\">${locale.card_hints.water_depth}: ${report.water_depth} cm</p>\n        <p id=\"comment\" if.bind=\"report.text\">${report.text}</p>\n      </div>\n    </div>\n    <div id=\"reviewSubmit\">\n      <div id=\"termsConditions\" if.bind=\"!swiped\">\n        <p if.bind=\"!reportcard.location.supported\"><i class=\"icon-attention-circled\"></i>&nbsp;${locale.card_hints.location_check}</p>\n        <p if.bind=\"!report.text && !reportcard.photo.file\"><i class=\"icon-cancel-circled\"></i>${locale.card_hints.more_details_required}</p>\n        <p if.bind=\"report.text || reportcard.photo.file\">${locale.card_hints.agreement_text}<br><a click.delegate=\"readTerms()\"><u>${locale.card_hints.agreement_title}</u></a></p>\n      </div>\n      <div id=\"submitSlider\" if.bind=\"!swiped\">\n        <button id=\"submitKnob\"></button>\n        <p id=\"ref1\" class=\"refText\"><i class=\"icon-angle-double-right\"></i></p>\n        <p id=\"ref2\" class=\"refText\">${locale.card_hints.swipe}</p>\n      </div>\n      <div id=\"spinWheel\" if.bind=\"swiped\">\n        <i class=\"icon-spin4 animate-spin\"></i>\n      </div>\n    </div>\n  </div>\n</template>\n"; });
-define('text!routes/cards/thanks/thanks.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"./thanks.css\"></require>\n\n  <div id=\"petalogo\" class=\"cardInner\">\n    <img src=\"assets/graphics/Riskmap_logo_noSub.svg\">\n  </div>\n  <div id=\"thankslogo\">\n    <i class=\"icon-add-report\"></i>\n  </div>\n\n\n  <div id=\"thanksText\">\n    <p id=\"thanksBold\">${locale.card_hints.thanks}</p>\n    <br>\n    <p>${locale.card_hints.confirmation} ${network_name}</p>\n      <br>\n      <p>${locale.card_hints.redirect}</p>\n  </div>\n\n\n\n</template>\n"; });
-define('text!routes/landing/landing.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#pageWrapper {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  margin: 0px;\n  padding: 0px;\n}\n#pageWrapper #screen {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  margin: 0px;\n  padding: 0px;\n  background-color: rgba(128, 128, 128, 0.25);\n  z-index: 1025;\n}\n#pageWrapper #screen #cityPopup {\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  width: 200px;\n  -ms-transform: translate(-50%, -50%);\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  padding: 12px;\n  border: none;\n  border-radius: 6px;\n  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.4);\n  z-index: 1030;\n  background: rgba(255, 255, 255, 0.85);\n}\n#pageWrapper #screen #cityPopup p {\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  margin: 0 0 6px 0;\n}\n#pageWrapper #screen #cityPopup label {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  cursor: pointer;\n  text-transform: capitalize;\n  text-decoration: none;\n}\n@media (min-width: 420px) {\n  #pageWrapper #screen #cityPopup label:hover {\n    color: #10b7ff;\n  }\n}\n#pageWrapper #screen #cityPopup label:active {\n  color: #1f4963;\n}\n#pageWrapper #map {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  margin: 0px;\n  padding: 0px;\n}\n#pageWrapper #map .leaflet-top {\n  top: 45px;\n}\n#pageWrapper #map .leaflet-control-zoom a {\n  background-color: #ffffff;\n}\n#pageWrapper #map .leaflet-control-zoom-in,\n#pageWrapper #map .leaflet-control-zoom-out {\n  width: 30px;\n  height: 28px;\n}\n#pageWrapper #map .leaflet-bottom {\n  bottom: 10px;\n  left: 10px;\n}\n#pageWrapper #topBar {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 45px;\n  background-color: rgba(255, 255, 255, 0.85);\n  z-index: 1020;\n  border-bottom: 1px solid #808080;\n}\n#pageWrapper #topBar #logo_top {\n  position: absolute;\n  left: 12px;\n  bottom: 2px;\n  width: 125px;\n  top: 2px;\n}\n#pageWrapper #topBar #logo_top #pbLogo {\n  width: 100%;\n}\n#pageWrapper #topBar div.menuBtn {\n  display: none;\n  position: absolute;\n  background: transparent;\n  top: 8px;\n  right: 10px;\n  line-height: 30px;\n}\n#pageWrapper #topBar div.menuBtn i {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 30px;\n  color: #424242;\n  cursor: pointer;\n}\n@media (min-width: 420px) {\n  #pageWrapper #topBar div.menuBtn i:hover {\n    color: #10b7ff;\n  }\n}\n#pageWrapper #topBar div.menuBtn i:active {\n  color: #1f4963;\n}\n#pageWrapper #topBar div.active {\n  display: block;\n}\n#pageWrapper #logo_bottom {\n  position: absolute;\n  left: 10px;\n  bottom: 4.5px;\n  width: 180px;\n  padding: 0px;\n  margin: 0px;\n  z-index: 999;\n}\n#pageWrapper #logo_bottom #mitLogo {\n  width: 100%;\n}\n#pageWrapper #infoPane {\n  display: none;\n  position: absolute;\n  height: 200px;\n  bottom: 0px;\n  padding: 0px;\n  margin: 0px;\n  z-index: 1000;\n  background-color: rgba(255, 255, 255, 0.85);\n  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.4);\n  background-color: #ffffff;\n}\n@media screen and (min-width: 320px) {\n  #pageWrapper #infoPane {\n    width: 100%;\n  }\n}\n@media screen and (min-width: 420px) {\n  #pageWrapper #infoPane {\n    width: 420px;\n    right: 0px;\n  }\n}\n#pageWrapper #infoPane .closeBtn {\n  position: absolute;\n  background: transparent;\n  margin: 0px;\n  padding: 0px;\n  top: 6px;\n  right: 6px;\n  text-align: right;\n  z-index: 1015;\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 18px;\n  color: #424242;\n  cursor: pointer;\n}\n@media (min-width: 420px) {\n  #pageWrapper #infoPane .closeBtn:hover {\n    color: #10b7ff;\n  }\n}\n#pageWrapper #infoPane .closeBtn:active {\n  color: #1f4963;\n}\n#pageWrapper #infoPane .infoWrapper {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  padding: 12px 12px 0px 12px;\n  z-index: 1002;\n}\n#pageWrapper #sidePane {\n  display: none;\n  position: absolute;\n  height: 320px;\n  bottom: 0px;\n  padding: 0px;\n  margin: 0px;\n  z-index: 1000;\n  background-color: rgba(255, 255, 255, 0.85);\n  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.4);\n  overflow: scroll;\n  background-color: #ffffff;\n}\n@media screen and (min-width: 320px) {\n  #pageWrapper #sidePane {\n    width: 100%;\n  }\n}\n@media screen and (min-width: 420px) {\n  #pageWrapper #sidePane {\n    width: 420px;\n    right: 0px;\n  }\n}\n"; });
+define('text!components/side-pane/side-pane.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#tabsBar {\n  position: relative;\n  width: 100%;\n  height: 45px;\n  border: none;\n  border-bottom: 1px solid #31aade;\n}\n#tabsBar ul.tabs {\n  position: absolute;\n  bottom: -4px;\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  width: 100%;\n}\n#tabsBar ul.tabs li {\n  float: left;\n  height: 100%;\n  text-align: center;\n}\n#tabsBar ul.tabs li.paneTabs {\n  width: 24%;\n}\n#tabsBar ul.tabs li.paneTabs div.tabLinks {\n  width: 100%;\n  cursor: pointer;\n  line-height: 40px;\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 21px;\n  color: #424242;\n}\n#tabsBar ul.tabs li.paneTabs div.tabLinks p {\n  display: none;\n  position: absolute;\n  bottom: -75%;\n  width: 24%;\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  color: #31aade;\n  line-height: 14px;\n  text-transform: capitalize;\n}\n#tabsBar ul.tabs li.paneTabs div.tabLinks.active {\n  color: #31aade;\n  border-bottom: 4px solid #31aade;\n}\n#tabsBar ul.tabs li.paneTabs div.tabLinks.active p {\n  display: block;\n}\n#tabsBar ul.tabs li.paneTabs div.tabLinks:hover {\n  color: #10b7ff;\n}\n#tabsBar ul.tabs li.paneTabs div.tabLinks:hover p {\n  display: block;\n  color: #10b7ff;\n}\n#tabsBar ul.tabs li.langTab {\n  position: absolute;\n  right: 0;\n  width: 24%;\n  margin-top: 6px;\n  padding: 0;\n}\n#tabsBar ul.tabs li.langTab div {\n  position: relative;\n  float: left;\n  width: 30%;\n  height: 60%;\n}\n#tabsBar ul.tabs li.langTab div:first-child {\n  border-right: 1px solid #31aade;\n}\n#tabsBar ul.tabs li.langTab div label {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 16px;\n  color: #424242;\n  line-height: 28px;\n  cursor: pointer;\n}\n#tabsBar ul.tabs li.langTab div label.active {\n  color: #31aade;\n}\n#tabsBar ul.tabs li.langTab div label:hover {\n  color: #10b7ff;\n}\n#tabsBar ul.tabs li.langTab div label input {\n  display: none;\n}\n#paneContent {\n  position: relative;\n  width: 100%;\n}\n#paneContent div.contentWrapper {\n  padding: 30px 12px 0 12px;\n}\n#paneContent div.contentWrapper#content-map {\n  overflow: hidden;\n}\n#paneContent div.contentWrapper#content-map p {\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  margin-bottom: 8px;\n}\n#paneContent div.contentWrapper#content-map label {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  cursor: pointer;\n  text-transform: capitalize;\n  padding-right: 10px;\n}\n@media (min-width: 420px) {\n  #paneContent div.contentWrapper#content-map label:hover {\n    color: #10b7ff;\n  }\n}\n#paneContent div.contentWrapper#content-map label:active {\n  color: #1f4963;\n}\n#paneContent div.contentWrapper#content-map .normal {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  text-transform: capitalize;\n  padding-right: 10px;\n  margin: 0;\n}\n#paneContent div.contentWrapper#content-map #legend {\n  margin-top: 20px;\n  border-bottom: 1px solid #31aade;\n}\n#paneContent div.contentWrapper#content-info {\n  overflow: hidden;\n}\n#paneContent div.contentWrapper#content-info #headLogos {\n  width: 90%;\n  margin: auto;\n  table-layout: fixed;\n}\n#paneContent div.contentWrapper#content-info #headLogos #usaidLogo {\n  width: 75%;\n}\n#paneContent div.contentWrapper#content-info #headLogos #urlLogo {\n  width: 100%;\n}\n#paneContent div.contentWrapper#content-info p {\n  font-family: \"Roboto\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  width: 90%;\n  margin: 15px auto;\n}\n#paneContent div.contentWrapper#content-info p a {\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  cursor: pointer;\n}\n@media (min-width: 420px) {\n  #paneContent div.contentWrapper#content-info p a:hover {\n    color: #10b7ff;\n  }\n}\n#paneContent div.contentWrapper#content-info p a:active {\n  color: #1f4963;\n}\n#paneContent div.contentWrapper#content-info p b {\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  color: #31aade;\n}\n#paneContent div.contentWrapper#content-info p#intro {\n  font-family: \"Roboto\", \"Roboto\", Open Sans;\n  font-size: 20px;\n  color: #424242;\n  text-align: center;\n  margin: 12px auto;\n  width: 90%;\n}\n#paneContent div.contentWrapper#content-info p#disclaimer i {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n}\n#paneContent div.contentWrapper#content-info p#usaid {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 12px;\n  color: #424242;\n}\n#paneContent div.contentWrapper#content-info #partners {\n  width: 90%;\n  margin: auto;\n  table-layout: fixed;\n  border-bottom: 1px solid #31aade;\n  padding-bottom: 10px;\n}\n#paneContent div.contentWrapper#content-info #partners tr.label {\n  height: 18px;\n}\n#paneContent div.contentWrapper#content-info #partners tr.label p {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 12px;\n  color: #424242;\n  margin: 10px 0 4px 0;\n  padding: 0;\n}\n#paneContent div.contentWrapper#content-info #partners .bnpbLogo {\n  width: 340px;\n}\n#paneContent div.contentWrapper#content-info #partners .partnerLogo {\n  height: 35px;\n  width: auto;\n  padding: 5px;\n}\n#paneContent div.contentWrapper#content-info #pbLogo {\n  width: 90%;\n  margin: 8px auto;\n  text-align: center;\n}\n#paneContent div.contentWrapper#content-info #pbLogo img {\n  width: 180px;\n}\n#paneContent div.contentWrapper#content-report {\n  overflow: hidden;\n}\n#paneContent div.contentWrapper#content-report table,\n#paneContent div.contentWrapper#content-report tr,\n#paneContent div.contentWrapper#content-report td {\n  padding: 0;\n  width: 100%;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable {\n  margin: 0;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr td {\n  border-bottom: 1px solid #31aade;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr td.labelRow {\n  cursor: pointer;\n  border: none;\n  font-family: \"Roboto\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr td.labelRow.active {\n  color: #31aade;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr td.labelRow:hover {\n  color: #10b7ff;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr td.labelRow p {\n  margin: 0;\n  padding: 0;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr td.labelRow p.labelText {\n  float: left;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr td.labelRow p.arrows {\n  float: right;\n  display: block;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr td.labelRow p.up {\n  display: none;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr.wrapRow .videoWrapper {\n  display: none;\n  width: 100%;\n  height: auto;\n  font-family: \"Roboto\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr.wrapRow .videoWrapper iframe {\n  width: 100%;\n  border: none;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr.wrapRow .videoWrapper p {\n  margin: 0;\n  padding: 0;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr.wrapRow .videoWrapper p ul {\n  list-style: none;\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  line-height: 21px;\n  padding: 0;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr.wrapRow .videoWrapper p a {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  cursor: pointer;\n  line-height: 21px;\n}\n@media (min-width: 420px) {\n  #paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr.wrapRow .videoWrapper p a:hover {\n    color: #10b7ff;\n  }\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr.wrapRow .videoWrapper p a:active {\n  color: #1f4963;\n}\n#paneContent div.contentWrapper#content-report table#reportTable tr.vidRows table.vidTable tr.wrapRow .videoWrapper p a i {\n  font-size: 18px;\n}\n"; });
 define('text!routes/cards/terms/terms.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"./terms.css\"></require>\n\n    <div id=\"TandCWrapper\" innerhtml.bind=\"locale.termsContents\">\n    </div>\n\n</template>\n"; });
+define('text!routes/cards/thanks/thanks.html', ['module'], function(module) { module.exports = "<template>\n  <require from=\"./thanks.css\"></require>\n\n  <div id=\"petalogo\" class=\"cardInner\">\n    <img src=\"assets/graphics/Riskmap_logo_noSub.svg\">\n  </div>\n  <div id=\"thankslogo\">\n    <i class=\"icon-add-report\"></i>\n  </div>\n\n\n  <div id=\"thanksText\">\n    <p id=\"thanksBold\">${locale.card_hints.thanks}</p>\n    <br>\n    <p>${locale.card_hints.confirmation} ${network_name}</p>\n      <br>\n      <p>${locale.card_hints.redirect}</p>\n  </div>\n\n\n\n</template>\n"; });
+define('text!routes/cards/cards.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n@media screen {\n  #cardWrapper {\n    position: relative;\n  }\n}\n@media screen and (min-width: 240px) {\n  #cardWrapper {\n    width: 100%;\n  }\n}\n@media screen and (min-width: 240px) and (min-height: 200px) {\n  #cardWrapper {\n    height: 100%;\n  }\n}\n@media screen and (min-width: 240px) and (min-height: 720px) {\n  #cardWrapper {\n    height: 720px;\n    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);\n  }\n}\n@media screen and (min-width: 420px) {\n  #cardWrapper {\n    width: 420px;\n    margin: auto;\n    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);\n  }\n}\n@media screen and (min-width: 420px) and (min-height: 200px) {\n  #cardWrapper {\n    height: 100%;\n  }\n}\n@media screen and (min-width: 420px) and (min-height: 720px) {\n  #cardWrapper {\n    height: 720px;\n  }\n}\n#cardTitle {\n  position: relative;\n  margin: 0px;\n  padding: 0px;\n  width: 100%;\n  height: 50px;\n  /* height + padding-top + padding-bottom = 50px */\n  background-color: #424242;\n}\n#cardTitle #alert {\n  position: absolute;\n  top: 8px;\n  left: 6px;\n  cursor: pointer;\n  z-index: 10;\n}\n#cardTitle #alert p {\n  padding: 0;\n  margin: 0;\n  font-size: 26px;\n  color: #ffffff;\n}\n#cardTitle #alert p i {\n  z-index: 5;\n}\n#cardTitle #titleText {\n  position: absolute;\n  width: 100%;\n  font-family: \"Roboto Medium\", \"Roboto\", Open Sans;\n  color: #ffffff;\n  font-size: 16px;\n  text-align: center;\n}\n#cardTitle #langSwitch {\n  position: absolute;\n  top: 18px;\n  right: 15px;\n}\n#cardTitle #langSwitch label {\n  font-size: 14px;\n  font-family: \"Roboto Medium\", \"Roboto\", Open Sans;\n  color: #ffffff;\n  cursor: pointer;\n}\n#cardTitle #langSwitch label input {\n  display: none;\n}\n#cardTitle #langSwitch label:first-child {\n  border-right: 1px solid #ffffff;\n}\n#cardTitle #langSwitch label.active {\n  color: #31aade;\n}\n#tabRow {\n  position: absolute;\n  width: 100%;\n  bottom: 0px;\n}\n.tabButtons {\n  position: relative;\n  margin: 0px;\n  padding: 0px;\n  width: 20%;\n  height: 5px;\n  border: none;\n  background-color: #31aade;\n  float: left;\n  outline: none;\n}\n.tabButtons:disabled {\n  opacity: 0.25;\n}\n#cardContent {\n  position: relative;\n  width: 100%;\n  height: 50%;\n  /*Change on the fly*/\n  text-align: center;\n  z-index: 3;\n  background-color: #808080;\n  overflow: hidden;\n}\n#cardNavigation {\n  position: absolute;\n  align-content: center;\n  margin: 0px;\n  padding: 0px;\n  background-color: #808080;\n  bottom: 0px;\n  width: 100%;\n  height: 50px;\n  overflow: hidden;\n}\n#cardNavigation .navBtn {\n  position: relative;\n  color: #ffffff;\n  width: 50%;\n  height: 50px;\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 16px;\n  line-height: 50px;\n  background: #424242;\n  border: none;\n  outline: none;\n  z-index: 4;\n  margin: 0px;\n  padding: 0px;\n  float: left;\n}\n#cardNavigation .navBtn#prv {\n  border-right: 1px solid #808080;\n}\n#cardNavigation .navBtn:disabled {\n  color: #5e5e5e;\n}\n#cardNavigation .navBtn:active {\n  background: #5e5e5e;\n  transform: translateY(1px);\n}\n"; });
+define('text!routes/landing/landing.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#pageWrapper {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  margin: 0px;\n  padding: 0px;\n}\n#pageWrapper #screen {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  margin: 0px;\n  padding: 0px;\n  background-color: rgba(128, 128, 128, 0.25);\n  z-index: 1025;\n}\n#pageWrapper #screen #cityPopup {\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  width: 200px;\n  -ms-transform: translate(-50%, -50%);\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  padding: 12px;\n  border: none;\n  border-radius: 6px;\n  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.4);\n  z-index: 1030;\n  background: rgba(255, 255, 255, 0.85);\n}\n#pageWrapper #screen #cityPopup p {\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  margin: 0 0 6px 0;\n}\n#pageWrapper #screen #cityPopup label {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  cursor: pointer;\n  text-transform: capitalize;\n  text-decoration: none;\n}\n@media (min-width: 420px) {\n  #pageWrapper #screen #cityPopup label:hover {\n    color: #10b7ff;\n  }\n}\n#pageWrapper #screen #cityPopup label:active {\n  color: #1f4963;\n}\n#pageWrapper #map {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  margin: 0px;\n  padding: 0px;\n}\n#pageWrapper #map .leaflet-top {\n  top: 45px;\n}\n#pageWrapper #map .leaflet-control-zoom a {\n  background-color: #ffffff;\n}\n#pageWrapper #map .leaflet-control-zoom-in,\n#pageWrapper #map .leaflet-control-zoom-out {\n  width: 30px;\n  height: 28px;\n}\n#pageWrapper #map .leaflet-bottom {\n  bottom: 10px;\n  left: 10px;\n}\n#pageWrapper #topBar {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 45px;\n  background-color: rgba(255, 255, 255, 0.85);\n  z-index: 1020;\n  border-bottom: 1px solid #808080;\n}\n#pageWrapper #topBar #logo_top {\n  position: absolute;\n  left: 12px;\n  bottom: 2px;\n  width: 125px;\n  top: 2px;\n}\n#pageWrapper #topBar #logo_top #pbLogo {\n  width: 100%;\n}\n#pageWrapper #topBar div.menuBtn {\n  display: none;\n  position: absolute;\n  background: transparent;\n  top: 8px;\n  right: 10px;\n  line-height: 30px;\n}\n#pageWrapper #topBar div.menuBtn i {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 30px;\n  color: #424242;\n  cursor: pointer;\n}\n@media (min-width: 420px) {\n  #pageWrapper #topBar div.menuBtn i:hover {\n    color: #10b7ff;\n  }\n}\n#pageWrapper #topBar div.menuBtn i:active {\n  color: #1f4963;\n}\n#pageWrapper #topBar div.active {\n  display: block;\n}\n#pageWrapper #logo_bottom {\n  position: absolute;\n  left: 10px;\n  bottom: 4.5px;\n  width: 180px;\n  padding: 0px;\n  margin: 0px;\n  z-index: 999;\n}\n#pageWrapper #logo_bottom #mitLogo {\n  width: 100%;\n}\n#pageWrapper #infoPane {\n  display: none;\n  position: absolute;\n  height: 200px;\n  bottom: 0px;\n  padding: 0px;\n  margin: 0px;\n  z-index: 1000;\n  background-color: rgba(255, 255, 255, 0.85);\n  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.4);\n  background-color: #ffffff;\n}\n@media screen and (min-width: 320px) {\n  #pageWrapper #infoPane {\n    width: 100%;\n  }\n}\n@media screen and (min-width: 420px) {\n  #pageWrapper #infoPane {\n    width: 420px;\n    right: 0px;\n  }\n}\n#pageWrapper #infoPane .closeBtn {\n  position: absolute;\n  background: transparent;\n  margin: 0px;\n  padding: 0px;\n  top: 6px;\n  right: 6px;\n  text-align: right;\n  z-index: 1015;\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 18px;\n  color: #424242;\n  cursor: pointer;\n}\n@media (min-width: 420px) {\n  #pageWrapper #infoPane .closeBtn:hover {\n    color: #10b7ff;\n  }\n}\n#pageWrapper #infoPane .closeBtn:active {\n  color: #1f4963;\n}\n#pageWrapper #infoPane .infoWrapper {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  padding: 12px 12px 0px 12px;\n  z-index: 1002;\n}\n#pageWrapper #sidePane {\n  display: none;\n  position: absolute;\n  height: 320px;\n  bottom: 0px;\n  padding: 0px;\n  margin: 0px;\n  z-index: 1000;\n  background-color: rgba(255, 255, 255, 0.85);\n  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.4);\n  overflow: scroll;\n  background-color: #ffffff;\n}\n@media screen and (min-width: 320px) {\n  #pageWrapper #sidePane {\n    width: 100%;\n  }\n}\n@media screen and (min-width: 420px) {\n  #pageWrapper #sidePane {\n    width: 420px;\n    right: 0px;\n  }\n}\n"; });
 define('text!routes/cards/card-template/card-template.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#cardTemplateWrapper {\n  position: absolute;\n  width: 300px;\n  height: 272px;\n  left: 50%;\n  top: 0px;\n  -ms-transform: translate(-50%, 0);\n  -webkit-transform: translate(-50%, 0);\n  transform: translate(-50%, 0);\n  overflow: visible;\n}\n@media screen and (min-height: 372px) {\n  #cardTemplateWrapper {\n    top: 50%;\n    -ms-transform: translate(-50%, -50%);\n    -webkit-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n  }\n}\n"; });
-define('text!routes/cards/description/description.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#descriptionWrapper {\n  position: absolute;\n  width: 300px;\n  height: 272px;\n  left: 50%;\n  top: 0px;\n  -ms-transform: translate(-50%, 0);\n  -webkit-transform: translate(-50%, 0);\n  transform: translate(-50%, 0);\n  overflow: visible;\n}\n@media screen and (min-height: 372px) {\n  #descriptionWrapper {\n    top: 50%;\n    -ms-transform: translate(-50%, -50%);\n    -webkit-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n  }\n}\n#descriptionWrapper #textarea {\n  position: relative;\n  width: 208px;\n  height: 192px;\n  margin: 8px 0 0 0;\n  padding: 6px;\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  color: #ffffff;\n  border: none;\n  font-size: 14px;\n  resize: none;\n  background-color: #808080;\n  outline: none;\n}\n#descriptionWrapper #textarea::-webkit-input-placeholder {\n  color: #2f2f2f;\n}\n#descriptionWrapper #textarea::-moz-placeholder {\n  color: #2f2f2f;\n}\n#descriptionWrapper #textarea:-moz-placeholder {\n  color: #2f2f2f;\n}\n#descriptionWrapper #textarea:-ms-input-placeholder {\n  color: #2f2f2f;\n}\n#descriptionWrapper #textarea:focus {\n  margin-top: 7px;\n  height: 191px;\n  border: 1px solid #31aade;\n}\n#descriptionWrapper #modBtnWrapper {\n  position: relative;\n  width: 226px;\n  height: 36px;\n  border-top: 3px solid #31aade;\n  margin: 12px auto;\n}\n#descriptionWrapper #modBtnWrapper .modBtn {\n  position: relative;\n  width: 36px;\n  height: 36px;\n  padding: 3px 0 0 0;\n  margin: 0px;\n  background-color: transparent;\n  border: none;\n  color: #ffffff;\n  text-shadow: 1px 1px 2px #424242;\n  outline: none;\n  float: left;\n}\n#descriptionWrapper #modBtnWrapper .modBtn:first-child {\n  margin-right: 6px;\n}\n#descriptionWrapper #modBtnWrapper .modBtn .icon-block {\n  line-height: 36px;\n  font-size: 20px;\n}\n#descriptionWrapper #modBtnWrapper .modBtn .icon-keyboard {\n  position: absolute;\n  font-size: 20px;\n  left: 3px;\n  bottom: 3.5px;\n}\n#descriptionWrapper #modBtnWrapper .modBtn .icon-down-open {\n  position: absolute;\n  font-size: 12px;\n  left: 8.5px;\n  bottom: -3px;\n}\n#descriptionWrapper #modBtnWrapper .modBtn .icon-up-open {\n  position: absolute;\n  font-size: 12px;\n  left: 8.5px;\n  bottom: 20px;\n}\n#descriptionWrapper #modBtnWrapper .modBtn:active {\n  border-bottom: 2px solid #31aade;\n  color: #31aade;\n}\n#descriptionWrapper #modBtnWrapper .modBtn:disabled {\n  border: none;\n  color: rgba(0, 0, 0, 0.15);\n  text-shadow: none;\n}\n#descriptionWrapper #modBtnWrapper p {\n  margin: 0px;\n  padding: 12px 0px 0px 0px;\n  float: right;\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n}\n"; });
 define('text!routes/cards/depth/depth.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#depthWrapper {\n  position: absolute;\n  width: 300px;\n  height: 272px;\n  left: 50%;\n  top: 0px;\n  -ms-transform: translate(-50%, 0);\n  -webkit-transform: translate(-50%, 0);\n  transform: translate(-50%, 0);\n  overflow: visible;\n}\n@media screen and (min-height: 372px) {\n  #depthWrapper {\n    top: 50%;\n    -ms-transform: translate(-50%, -50%);\n    -webkit-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n  }\n}\n#depthWrapper #bgImage {\n  width: 96%;\n  height: 96%;\n  z-index: 2;\n}\n#depthWrapper #floodZone {\n  position: absolute;\n  width: 87%;\n  height: 22%;\n  left: 6.5%;\n  bottom: 0px;\n  -ms-transform: translate(0, -12px);\n  -webkit-transform: translate(0, -12px);\n  transform: translate(0, -12px);\n  border: none;\n  border-top: 2px dashed white;\n  background: linear-gradient(rgba(49, 170, 222, 0.6), rgba(49, 170, 222, 0));\n  z-index: 3;\n}\n#depthWrapper #sliderZone {\n  position: absolute;\n  width: 100%;\n  height: 36px;\n  left: 0px;\n  bottom: 22%;\n  -ms-transform: translate(0, 20%);\n  -webkit-transform: translate(0, 20%);\n  transform: translate(0, 20%);\n  overflow: visible;\n  z-index: 10;\n}\n#depthWrapper #sliderZone #depthText {\n  position: absolute;\n  top: -4px;\n  left: 20px;\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #ffffff;\n  text-shadow: 1px 1px 3px #424242;\n}\n#depthWrapper #sliderZone .knobHelper {\n  position: absolute;\n  right: 10.5px;\n  color: rgba(255, 255, 255, 0.85);\n  font-size: 12px;\n  line-height: 12px;\n  z-index: 9;\n}\n#depthWrapper #sliderZone .knobHelper#hTop {\n  top: -10px;\n}\n#depthWrapper #sliderZone .knobHelper#hBottom {\n  bottom: -5px;\n}\n#depthWrapper #sliderZone #knob {\n  position: absolute;\n  width: 18px;\n  height: 18px;\n  top: 5px;\n  right: 8px;\n  background-color: #31aade;\n  border: 2px solid #ffffff;\n  border-radius: 11px;\n  /* add border to width/2 */\n  z-index: 8;\n  box-shadow: 0px 0px 12px 8px rgba(49, 170, 222, 0.4);\n}\n"; });
+define('text!routes/cards/description/description.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#descriptionWrapper {\n  position: absolute;\n  width: 300px;\n  height: 272px;\n  left: 50%;\n  top: 0px;\n  -ms-transform: translate(-50%, 0);\n  -webkit-transform: translate(-50%, 0);\n  transform: translate(-50%, 0);\n  overflow: visible;\n}\n@media screen and (min-height: 372px) {\n  #descriptionWrapper {\n    top: 50%;\n    -ms-transform: translate(-50%, -50%);\n    -webkit-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n  }\n}\n#descriptionWrapper #textarea {\n  position: relative;\n  width: 208px;\n  height: 192px;\n  margin: 8px 0 0 0;\n  padding: 6px;\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  color: #ffffff;\n  border: none;\n  font-size: 14px;\n  resize: none;\n  background-color: #808080;\n  outline: none;\n}\n#descriptionWrapper #textarea::-webkit-input-placeholder {\n  color: #2f2f2f;\n}\n#descriptionWrapper #textarea::-moz-placeholder {\n  color: #2f2f2f;\n}\n#descriptionWrapper #textarea:-moz-placeholder {\n  color: #2f2f2f;\n}\n#descriptionWrapper #textarea:-ms-input-placeholder {\n  color: #2f2f2f;\n}\n#descriptionWrapper #textarea:focus {\n  margin-top: 7px;\n  height: 191px;\n  border: 1px solid #31aade;\n}\n#descriptionWrapper #modBtnWrapper {\n  position: relative;\n  width: 226px;\n  height: 36px;\n  border-top: 3px solid #31aade;\n  margin: 12px auto;\n}\n#descriptionWrapper #modBtnWrapper .modBtn {\n  position: relative;\n  width: 36px;\n  height: 36px;\n  padding: 3px 0 0 0;\n  margin: 0px;\n  background-color: transparent;\n  border: none;\n  color: #ffffff;\n  text-shadow: 1px 1px 2px #424242;\n  outline: none;\n  float: left;\n}\n#descriptionWrapper #modBtnWrapper .modBtn:first-child {\n  margin-right: 6px;\n}\n#descriptionWrapper #modBtnWrapper .modBtn .icon-block {\n  line-height: 36px;\n  font-size: 20px;\n}\n#descriptionWrapper #modBtnWrapper .modBtn .icon-keyboard {\n  position: absolute;\n  font-size: 20px;\n  left: 3px;\n  bottom: 3.5px;\n}\n#descriptionWrapper #modBtnWrapper .modBtn .icon-down-open {\n  position: absolute;\n  font-size: 12px;\n  left: 8.5px;\n  bottom: -3px;\n}\n#descriptionWrapper #modBtnWrapper .modBtn .icon-up-open {\n  position: absolute;\n  font-size: 12px;\n  left: 8.5px;\n  bottom: 20px;\n}\n#descriptionWrapper #modBtnWrapper .modBtn:active {\n  border-bottom: 2px solid #31aade;\n  color: #31aade;\n}\n#descriptionWrapper #modBtnWrapper .modBtn:disabled {\n  border: none;\n  color: rgba(0, 0, 0, 0.15);\n  text-shadow: none;\n}\n#descriptionWrapper #modBtnWrapper p {\n  margin: 0px;\n  padding: 12px 0px 0px 0px;\n  float: right;\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n}\n"; });
 define('text!routes/cards/error/error.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#petalogo {\n  position: relative;\n  width: 80%;\n  margin: 0 auto;\n  padding: 20px 0 10px 0;\n  border: none;\n  border-bottom: 1px solid #2f2f2f;\n}\n#petalogo img {\n  width: 60%;\n}\n#msgWrapper {\n  position: relative;\n  width: 60%;\n  margin: auto;\n}\n#msgWrapper h2 {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 21px;\n  color: #424242;\n  color: #ffffff;\n}\n#msgWrapper p {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  color: #ffffff;\n}\n#msgWrapper a {\n  font-family: \"Roboto-Medium\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n  cursor: pointer;\n  color: #ffffff;\n}\n@media (min-width: 420px) {\n  #msgWrapper a:hover {\n    color: #10b7ff;\n  }\n}\n#msgWrapper a:active {\n  color: #1f4963;\n}\n#errorlogo {\n  position: relative;\n  margin: 10px auto 0 auto;\n  padding: 8px 0 0 0;\n  font-size: 80px;\n  color: #ffffff;\n}\n"; });
 define('text!routes/cards/location/location.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#locationWrapper {\n  width: 100%;\n  height: 100%;\n  margin: 0px;\n  padding: 0px;\n}\n#locationWrapper #mapWrapper {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  margin: 0px;\n  padding: 0px;\n  z-index: 1;\n}\n#locationWrapper #mapMarker {\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  -ms-transform: translate(-50%, -90%);\n  -webkit-transform: translate(-50%, -90%);\n  transform: translate(-50%, -90%);\n  font-size: 48px;\n  z-index: 100;\n}\n"; });
 define('text!routes/cards/photo/photo.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#photoWrapper {\n  position: absolute;\n  width: 300px;\n  height: 272px;\n  left: 50%;\n  top: 0px;\n  -ms-transform: translate(-50%, 0);\n  -webkit-transform: translate(-50%, 0);\n  transform: translate(-50%, 0);\n  overflow: visible;\n}\n@media screen and (min-height: 372px) {\n  #photoWrapper {\n    top: 50%;\n    -ms-transform: translate(-50%, -50%);\n    -webkit-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n  }\n}\n#photoWrapper #modBtnWrapper {\n  position: relative;\n  margin: 12px auto;\n  width: 226px;\n  height: 36px;\n  border-top: 3px solid #31aade;\n}\n#photoWrapper #modBtnWrapper .modBtn {\n  position: relative;\n  width: 36px;\n  height: 36px;\n  padding: 3px 0 0 0;\n  background-color: transparent;\n  border: none;\n  font-size: 24px;\n  line-height: 36px;\n  color: #ffffff;\n  text-shadow: 1px 1px 2px #424242;\n  outline: none;\n}\n#photoWrapper #modBtnWrapper .modBtn:active {\n  border-bottom: 2px solid #31aade;\n  color: #31aade;\n}\n#photoWrapper #modBtnWrapper .modBtn:disabled {\n  border: none;\n  color: rgba(0, 0, 0, 0.15);\n  text-shadow: none;\n}\n#photoWrapper #modBtnWrapper #changeButton,\n#photoWrapper #modBtnWrapper #rotateButton {\n  float: left;\n  margin-right: 6px;\n}\n#photoWrapper #modBtnWrapper #deleteButton {\n  float: right;\n}\n#photoWrapper #previewWrapper {\n  position: relative;\n  width: 208px;\n  height: 208px;\n  margin: 4px auto;\n  color: rgba(0, 0, 0, 0.15);\n  border: 2px solid #808080;\n}\n#photoWrapper #previewWrapper.enabled {\n  color: rgba(255, 255, 255, 0.4);\n  border: 2px solid rgba(255, 255, 255, 0.4);\n}\n#photoWrapper #previewWrapper.enabled:active i {\n  color: #31aade;\n}\n#photoWrapper #previewWrapper i {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  padding: 0px;\n  -ms-transform: translate(-50%, -50%);\n  -webkit-transform: translate(-50%, -50%);\n  transform: translate(-50%, -50%);\n  font-size: 120px;\n  z-index: 2;\n}\n#photoWrapper #previewWrapper canvas {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n  z-index: 3;\n}\n#photoWrapper #previewWrapper p {\n  position: absolute;\n  width: 100%;\n  top: 70%;\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 14px;\n  color: #424242;\n}\n"; });
 define('text!routes/cards/review/review.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#reviewWrapper {\n  position: absolute;\n  width: 300px;\n  height: 272px;\n  left: 50%;\n  top: 0px;\n  -ms-transform: translate(-50%, 0);\n  -webkit-transform: translate(-50%, 0);\n  transform: translate(-50%, 0);\n  overflow: visible;\n}\n@media screen and (min-height: 372px) {\n  #reviewWrapper {\n    top: 50%;\n    -ms-transform: translate(-50%, -50%);\n    -webkit-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%);\n  }\n}\n#reviewWrapper #summaryCard {\n  position: absolute;\n  width: 100%;\n  height: 140px;\n  left: 50%;\n  top: 12px;\n  -ms-transform: translate(-50%, 0);\n  -webkit-transform: translate(-50%, 0);\n  transform: translate(-50%, 0);\n  background-color: #424242;\n  box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.4);\n}\n#reviewWrapper #summaryCard #summaryPhoto {\n  position: relative;\n  width: 140px;\n  height: 100%;\n  overflow: hidden;\n  float: left;\n  text-align: left;\n}\n#reviewWrapper #summaryCard #summaryPhoto #photo {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  margin: 0px;\n  padding: 0px;\n  z-index: 3;\n}\n#reviewWrapper #summaryCard #summaryPhoto i {\n  font-size: 80px;\n  line-height: 140px;\n  color: #ffffff;\n  z-index: 2;\n  opacity: 0.4;\n}\n#reviewWrapper #summaryCard #summaryTextWrapper {\n  position: relative;\n  width: 50%;\n  height: 100%;\n  margin: 0;\n  text-align: left;\n  line-height: 18px;\n  float: right;\n  overflow: auto;\n}\n#reviewWrapper #summaryCard #summaryTextWrapper #floodH {\n  color: #31aade;\n  font-family: 'Roboto-Medium', 'Roboto', sans-serif;\n  font-size: 14px;\n  margin: 4px 10px 0 0;\n}\n#reviewWrapper #summaryCard #summaryTextWrapper #comment {\n  color: #ffffff;\n  font-family: 'Roboto-Light', 'Roboto', sans-serif;\n  margin: 4px 10px 0 0;\n  font-size: 12px;\n}\n#reviewWrapper #reviewSubmit {\n  position: absolute;\n  left: 50%;\n  bottom: 12px;\n  width: 100%;\n  /* width of nav buttons + margin */\n  -ms-transform: translate(-50%, 0);\n  -webkit-transform: translate(-50%, 0);\n  transform: translate(-50%, 0);\n  padding: 0px;\n}\n#reviewWrapper #reviewSubmit #termsConditions {\n  width: 100%;\n  margin: 0 0 12px 0;\n}\n#reviewWrapper #reviewSubmit #termsConditions p {\n  margin: 0;\n  padding: 0;\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 12px;\n  color: #424242;\n  color: #ffffff;\n}\n#reviewWrapper #reviewSubmit #termsConditions p a {\n  font-family: \"Roboto-Light\", \"Roboto\", Open Sans;\n  font-size: 12px;\n  color: #424242;\n  cursor: pointer;\n  color: #ffffff;\n}\n@media (min-width: 420px) {\n  #reviewWrapper #reviewSubmit #termsConditions p a:hover {\n    color: #10b7ff;\n  }\n}\n#reviewWrapper #reviewSubmit #termsConditions p a:active {\n  color: #1f4963;\n}\n#reviewWrapper #reviewSubmit #submitSlider {\n  position: relative;\n  width: 64%;\n  height: 36px;\n  margin: 0px auto;\n  padding: 3px;\n  border: 1px solid rgba(255, 255, 255, 0.4);\n  border-radius: 6px;\n  box-shadow: inset 2px 5px 8px 0px rgba(0, 0, 0, 0.4);\n  overflow: hidden;\n  z-index: 3;\n}\n#reviewWrapper #reviewSubmit #submitSlider #submitKnob {\n  position: relative;\n  width: 36px;\n  height: 36px;\n  border: none;\n  border-radius: 6px;\n  background-color: #31aade;\n  outline: none;\n  box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.4);\n  float: left;\n  z-index: 2;\n}\n#reviewWrapper #reviewSubmit #submitSlider #submitKnob:active {\n  background-color: #31aade;\n  box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.4);\n}\n#reviewWrapper #reviewSubmit #submitSlider .refText {\n  margin: 0px;\n  padding: 0px;\n  color: #ffffff;\n  opacity: 0.4;\n  z-index: 1;\n  float: left;\n}\n#reviewWrapper #reviewSubmit #submitSlider .refText#ref1 {\n  font-size: 30px;\n}\n#reviewWrapper #reviewSubmit #submitSlider .refText#ref2 {\n  font-size: 12px;\n  line-height: 36px;\n  font-family: 'Roboto-Light', 'Roboto', Open-sans;\n}\n#reviewWrapper #reviewSubmit #spinWheel {\n  position: relative;\n  margin: 0 auto 18px auto;\n  z-index: 3;\n  font-size: 42px;\n  color: #31aade;\n  text-shadow: 1px 1px 4px #424242;\n}\n"; });
-define('text!routes/cards/thanks/thanks.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#thanksText {\n  position: relative;\n  width: 75%;\n  top: 50%;\n  left: 50%;\n  -ms-transform: translate(-50%, 0%);\n  -webkit-transform: translate(-50%, 0%);\n  transform: translate(-50%, 0%);\n  color: #fff;\n  text-align: center;\n  font-size: 14px;\n  font-family: 'Roboto-Normal', 'Helvetica Neue', sans-serif;\n}\n#thanksBold {\n  color: white;\n  font-size: 21px;\n  font-family: 'Roboto-Medium', 'Helvetica Neue', sans-serif;\n}\n#petalogo {\n  position: relative;\n  padding: 5px 30px 5px 30px;\n  width: 60%;\n  top: 10px;\n  left: 50%;\n  -ms-transform: translate(-50%, 0);\n  -webkit-transform: translate(-50%, 0);\n  transform: translate(-50%, 0);\n  border: none;\n  border-bottom: 1px solid #2f2f2f;\n}\n#thankslogo {\n  position: relative;\n  margin: 30px auto 0 auto;\n  padding: 5px 30px 5px 30px;\n  width: 60%;\n  font-size: 80px;\n  color: #ffffff;\n}\n"; });
 define('text!routes/cards/terms/terms.css', ['module'], function(module) { module.exports = "#TandCWrapper {\n  position: relative;\n  width: 80%;\n  height: 80%;\n  margin: auto;\n  padding: 9px;\n  overflow: scroll;\n  color: #fff;\n  text-align: justify;\n  font-size: 12px;\n  font-family: 'Roboto-Normal', 'Helvetica Neue', sans-serif;\n  border: none;\n  border-bottom: 2px solid #31aade;\n  top: 3%;\n  transform: translateY(5%);\n}\n#TandCWrapper .headers {\n  text-align: left;\n  font-family: 'Roboto-Medium', 'Helvetica Neue', sans-serif;\n}\n"; });
+define('text!routes/cards/thanks/thanks.css', ['module'], function(module) { module.exports = "::-webkit-scrollbar {\n  display: none;\n}\n#thanksText {\n  position: relative;\n  width: 75%;\n  top: 50%;\n  left: 50%;\n  -ms-transform: translate(-50%, 0%);\n  -webkit-transform: translate(-50%, 0%);\n  transform: translate(-50%, 0%);\n  color: #fff;\n  text-align: center;\n  font-size: 14px;\n  font-family: 'Roboto-Normal', 'Helvetica Neue', sans-serif;\n}\n#thanksBold {\n  color: white;\n  font-size: 21px;\n  font-family: 'Roboto-Medium', 'Helvetica Neue', sans-serif;\n}\n#petalogo {\n  position: relative;\n  padding: 5px 30px 5px 30px;\n  width: 60%;\n  top: 10px;\n  left: 50%;\n  -ms-transform: translate(-50%, 0);\n  -webkit-transform: translate(-50%, 0);\n  transform: translate(-50%, 0);\n  border: none;\n  border-bottom: 1px solid #2f2f2f;\n}\n#thankslogo {\n  position: relative;\n  margin: 30px auto 0 auto;\n  padding: 5px 30px 5px 30px;\n  width: 60%;\n  font-size: 80px;\n  color: #ffffff;\n}\n"; });
 //# sourceMappingURL=app-bundle.js.map
